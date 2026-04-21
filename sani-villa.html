@@ -24,6 +24,7 @@
         .nav-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,248,244,0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(232,226,216,0.6); }
         .nav-inner { max-width: 1200px; margin: 0 auto; padding: 16px 32px; display: flex; align-items: center; justify-content: space-between; }
         .nav-brand { display: flex; align-items: center; text-decoration: none; }
+        .nav-logo { width: 32px; height: 32px; }
         .nav-brand .theta { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; color: var(--ink); }
         .nav-brand .theta em { font-style: italic; color: var(--accent); }
         .nav-links { display: flex; gap: 32px; align-items: center; }
@@ -254,7 +255,7 @@
 
 <header class="nav-bar">
     <div class="nav-inner">
-        <a href="/" class="nav-brand"><span class="theta">Theta <em>Villas</em></span></a>
+        <a href="/" class="nav-brand"><img src="images/logo.png" alt="" class="nav-logo"><span class="theta">Theta <em>Villas</em></span></a>
         <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
         <nav class="nav-links">
             <a href="/">Home</a>
@@ -282,34 +283,33 @@
 
 <!-- ══ HERO GALLERY (5-image teaser) ══ -->
 <div class="hero-gallery">
-    <img src="images/sani/patio-lounge.jpg" alt="Covered patio with pool and sea view at Sani villa" onclick="openLightbox(0)" loading="eager">
-    <img src="images/sani/drone-aerial.jpg" alt="Aerial drone view of Sani villa with private pool" onclick="openLightbox(1)" loading="eager">
-    <img src="images/sani/pool-sunset.jpg" alt="Private pool at sunset with sea reflection" onclick="openLightbox(2)" loading="eager">
-    <img src="images/sani/master-bedroom.jpg" alt="Master bedroom with en-suite bathroom" onclick="openLightbox(3)" loading="lazy">
-    <img src="images/sani/poolside-loungers.jpg" alt="Poolside sun loungers and garden" onclick="openLightbox(4)" loading="lazy">
+    <img src="images/sani/11.jpg" alt="Covered patio with pool and sea view at Sani villa" onclick="openLightbox(0)" loading="eager">
+    <img src="images/sani/9.jpg" alt="Aerial drone view of Sani villa with private pool" onclick="openLightbox(1)" loading="eager">
+    <img src="images/sani/3.jpg" alt="Private pool at sunset with sea reflection" onclick="openLightbox(2)" loading="eager">
+    <img src="images/sani/13.jpg" alt="Master bedroom with en-suite bathroom" onclick="openLightbox(3)" loading="lazy">
+    <img src="images/sani/8.jpg" alt="Poolside sun loungers and garden" onclick="openLightbox(4)" loading="lazy">
 </div>
 
 <!-- ══ FULL GALLERY ══ -->
 <section class="gallery-section">
     <div class="gallery-header">
         <h2>All Photos</h2>
-        <span class="photo-count">14 photos</span>
+        <span class="photo-count">13 photos</span>
     </div>
     <div class="gallery-grid">
-        <img src="images/sani/patio-lounge.jpg" alt="Covered patio lounge with pool and sea view" onclick="openLightbox(0)" loading="lazy">
-        <img src="images/sani/drone-aerial.jpg" alt="Aerial view of villa and pool" onclick="openLightbox(1)" loading="lazy">
-        <img src="images/sani/pool-sunset.jpg" alt="Pool reflecting sunset clouds" onclick="openLightbox(2)" loading="lazy">
-        <img src="images/sani/pool-sunset-flowers.jpg" alt="Pool at golden hour with flowers" onclick="openLightbox(3)" loading="lazy">
-        <img src="images/sani/pool-sunset-wide.jpg" alt="Sunset over the Thermaic Gulf from the villa" onclick="openLightbox(4)" loading="lazy">
-        <img src="images/sani/garden-sunset-view.jpg" alt="Garden view towards the sea at sunset" onclick="openLightbox(5)" loading="lazy">
-        <img src="images/sani/poolside-loungers.jpg" alt="Sun loungers by the pool with garden shade" onclick="openLightbox(6)" loading="lazy">
-        <img src="images/sani/garden-deck.jpg" alt="Garden deck with chairs under the trees" onclick="openLightbox(7)" loading="lazy">
-        <img src="images/sani/master-bedroom.jpg" alt="Master bedroom with en-suite and wall art" onclick="openLightbox(8)" loading="lazy">
-        <img src="images/sani/master-suite.jpg" alt="Master suite with balcony views and baby cot" onclick="openLightbox(9)" loading="lazy">
-        <img src="images/sani/bedroom-2.jpg" alt="First floor double bedroom" onclick="openLightbox(10)" loading="lazy">
-        <img src="images/sani/bedroom-3.jpg" alt="Double bedroom with ship painting" onclick="openLightbox(11)" loading="lazy">
-        <img src="images/sani/bedroom-twin.jpg" alt="Ground floor twin bedroom with sofa bed" onclick="openLightbox(12)" loading="lazy">
-        <img src="images/sani/bedroom-twin-2.jpg" alt="Twin bedroom with wooden shutters" onclick="openLightbox(13)" loading="lazy">
+        <img src="images/sani/11.jpg" alt="Covered patio lounge with pool and sea view" onclick="openLightbox(0)" loading="lazy">
+        <img src="images/sani/9.jpg" alt="Aerial view of villa and pool" onclick="openLightbox(1)" loading="lazy">
+        <img src="images/sani/3.jpg" alt="Pool reflecting sunset clouds" onclick="openLightbox(2)" loading="lazy">
+        <img src="images/sani/2.jpg" alt="Pool at golden hour with flowers" onclick="openLightbox(3)" loading="lazy">
+        <img src="images/sani/1.jpg" alt="Sunset over the Thermaic Gulf from the villa" onclick="openLightbox(4)" loading="lazy">
+        <img src="images/sani/8.jpg" alt="Sun loungers by the pool with garden shade" onclick="openLightbox(5)" loading="lazy">
+        <img src="images/sani/7.jpg" alt="Garden deck with chairs under the trees" onclick="openLightbox(5)" loading="lazy">
+        <img src="images/sani/13.jpg" alt="Master bedroom with en-suite and wall art" onclick="openLightbox(5)" loading="lazy">
+        <img src="images/sani/5.jpg" alt="Master suite with balcony views and baby cot" onclick="openLightbox(5)" loading="lazy">
+        <img src="images/sani/10.jpg" alt="First floor double bedroom" onclick="openLightbox(5)" loading="lazy">
+        <img src="images/sani/6.jpg" alt="Double bedroom with ship painting" onclick="openLightbox(5)" loading="lazy">
+        <img src="images/sani/12.jpg" alt="Ground floor twin bedroom with sofa bed" onclick="openLightbox(5)" loading="lazy">
+        <img src="images/sani/4.jpg" alt="Twin bedroom with wooden shutters" onclick="openLightbox(5)" loading="lazy">
     </div>
 </section>
 
@@ -410,20 +410,19 @@
 
 <script>
 const photos = [
-    { src: 'images/sani/patio-lounge.jpg', caption: 'Covered patio with pool and sea view' },
-    { src: 'images/sani/drone-aerial.jpg', caption: 'Aerial view of the villa and private pool' },
-    { src: 'images/sani/pool-sunset.jpg', caption: 'Pool reflecting the sunset' },
-    { src: 'images/sani/pool-sunset-flowers.jpg', caption: 'Pool at golden hour' },
-    { src: 'images/sani/pool-sunset-wide.jpg', caption: 'Sunset over the Thermaic Gulf' },
-    { src: 'images/sani/garden-sunset-view.jpg', caption: 'Garden view towards the sea' },
-    { src: 'images/sani/poolside-loungers.jpg', caption: 'Poolside sun loungers' },
-    { src: 'images/sani/garden-deck.jpg', caption: 'Shaded garden deck' },
-    { src: 'images/sani/master-bedroom.jpg', caption: 'Master bedroom with en-suite' },
-    { src: 'images/sani/master-suite.jpg', caption: 'Master suite with sea views' },
-    { src: 'images/sani/bedroom-2.jpg', caption: 'First floor double bedroom' },
-    { src: 'images/sani/bedroom-3.jpg', caption: 'Double bedroom' },
-    { src: 'images/sani/bedroom-twin.jpg', caption: 'Twin bedroom with sofa bed' },
-    { src: 'images/sani/bedroom-twin-2.jpg', caption: 'Twin bedroom' }
+    { src: 'images/sani/11.jpg', caption: 'Covered patio with pool and sea view' },
+    { src: 'images/sani/9.jpg', caption: 'Aerial view of the villa and private pool' },
+    { src: 'images/sani/3.jpg', caption: 'Pool reflecting the sunset' },
+    { src: 'images/sani/2.jpg', caption: 'Pool at golden hour' },
+    { src: 'images/sani/1.jpg', caption: 'Sunset over the Thermaic Gulf' },
+    { src: 'images/sani/8.jpg', caption: 'Poolside sun loungers' },
+    { src: 'images/sani/7.jpg', caption: 'Shaded garden deck' },
+    { src: 'images/sani/13.jpg', caption: 'Master bedroom with en-suite' },
+    { src: 'images/sani/5.jpg', caption: 'Master suite with sea views' },
+    { src: 'images/sani/10.jpg', caption: 'First floor double bedroom' },
+    { src: 'images/sani/6.jpg', caption: 'Double bedroom' },
+    { src: 'images/sani/12.jpg', caption: 'Twin bedroom with sofa bed' },
+    { src: 'images/sani/4.jpg', caption: 'Twin bedroom' }
 ];
 
 let currentIndex = 0;
