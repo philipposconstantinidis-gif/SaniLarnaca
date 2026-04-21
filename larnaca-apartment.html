@@ -19,6 +19,7 @@
         .nav-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,248,244,0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(232,226,216,0.6); }
         .nav-inner { max-width: 1200px; margin: 0 auto; padding: 16px 32px; display: flex; align-items: center; justify-content: space-between; }
         .nav-brand { display: flex; align-items: center; text-decoration: none; }
+        .nav-logo { width: 32px; height: 32px; }
         .nav-brand .theta { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; color: var(--ink); }
         .nav-brand .theta em { font-style: italic; color: var(--accent); }
         .nav-links { display: flex; gap: 32px; align-items: center; }
@@ -121,7 +122,7 @@
 
 <header class="nav-bar">
     <div class="nav-inner">
-        <a href="/" class="nav-brand"><span class="theta">Theta <em>Villas</em></span></a>
+        <a href="/" class="nav-brand"><img src="images/logo.png" alt="" class="nav-logo"><span class="theta">Theta <em>Villas</em></span></a>
         <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
         <nav class="nav-links">
             <a href="/">Home</a>
@@ -149,11 +150,11 @@
 
 <!-- HERO GALLERY -->
 <div class="hero-gallery">
-    <img src="images/larnaca/living-room.jpg" alt="Open-plan living room and kitchen in Larnaca apartment" onclick="openLightbox(0)" loading="eager">
-    <img src="images/larnaca/balcony.jpg" alt="Balcony with dining table and city view" onclick="openLightbox(1)" loading="eager">
-    <img src="images/larnaca/sunset-view.jpg" alt="Sunset view from the balcony" onclick="openLightbox(2)" loading="eager">
-    <img src="images/larnaca/bedroom-double.jpg" alt="Double bedroom with air conditioning" onclick="openLightbox(3)" loading="lazy">
-    <img src="images/larnaca/kitchen-dining.jpg" alt="Kitchen and dining area" onclick="openLightbox(4)" loading="lazy">
+    <img src="images/larnaca/8.jpeg" alt="Open-plan living room and kitchen in Larnaca apartment" onclick="openLightbox(0)" loading="eager">
+    <img src="images/larnaca/2.jpeg" alt="Balcony with dining table and city view" onclick="openLightbox(1)" loading="eager">
+    <img src="images/larnaca/6.jpeg" alt="Sunset view from the balcony" onclick="openLightbox(2)" loading="eager">
+    <img src="images/larnaca/3.jpeg" alt="Double bedroom with air conditioning" onclick="openLightbox(3)" loading="lazy">
+    <img src="images/larnaca/4.jpeg" alt="Kitchen and dining area" onclick="openLightbox(4)" loading="lazy">
 </div>
 
 <!-- FULL GALLERY -->
@@ -163,14 +164,14 @@
         <span class="photo-count">8 photos</span>
     </div>
     <div class="gallery-grid">
-        <img src="images/larnaca/living-room.jpg" alt="Open-plan living area" onclick="openLightbox(0)" loading="lazy">
-        <img src="images/larnaca/living-room-tv.jpg" alt="Living room with TV and balcony access" onclick="openLightbox(1)" loading="lazy">
-        <img src="images/larnaca/kitchen-dining.jpg" alt="Kitchen and dining table" onclick="openLightbox(2)" loading="lazy">
-        <img src="images/larnaca/bedroom-double.jpg" alt="Double bedroom with AC" onclick="openLightbox(3)" loading="lazy">
-        <img src="images/larnaca/bedroom-sofa.jpg" alt="Second bedroom with sofa bed" onclick="openLightbox(4)" loading="lazy">
-        <img src="images/larnaca/loft-bedroom.jpg" alt="Loft bedroom with twin beds" onclick="openLightbox(5)" loading="lazy">
-        <img src="images/larnaca/balcony.jpg" alt="Balcony with outdoor dining" onclick="openLightbox(6)" loading="lazy">
-        <img src="images/larnaca/sunset-view.jpg" alt="Sunset from the balcony" onclick="openLightbox(7)" loading="lazy">
+        <img src="images/larnaca/8.jpeg" alt="Open-plan living area" onclick="openLightbox(0)" loading="lazy">
+        <img src="images/larnaca/7.jpeg" alt="Living room with TV and balcony access" onclick="openLightbox(1)" loading="lazy">
+        <img src="images/larnaca/4.jpeg" alt="Kitchen and dining table" onclick="openLightbox(2)" loading="lazy">
+        <img src="images/larnaca/3.jpeg" alt="Double bedroom with AC" onclick="openLightbox(3)" loading="lazy">
+        <img src="images/larnaca/5.jpeg" alt="Second bedroom with sofa bed" onclick="openLightbox(4)" loading="lazy">
+        <img src="images/larnaca/1.jpeg" alt="Loft bedroom with twin beds" onclick="openLightbox(5)" loading="lazy">
+        <img src="images/larnaca/2.jpeg" alt="Balcony with outdoor dining" onclick="openLightbox(6)" loading="lazy">
+        <img src="images/larnaca/6.jpeg" alt="Sunset from the balcony" onclick="openLightbox(7)" loading="lazy">
     </div>
 </section>
 
@@ -249,14 +250,14 @@
 
 <script>
 const photos = [
-    { src: 'images/larnaca/living-room.jpg', caption: 'Open-plan living room and kitchen' },
-    { src: 'images/larnaca/living-room-tv.jpg', caption: 'Living room with Smart TV and balcony' },
-    { src: 'images/larnaca/kitchen-dining.jpg', caption: 'Kitchen and dining area' },
-    { src: 'images/larnaca/bedroom-double.jpg', caption: 'Double bedroom with air conditioning' },
-    { src: 'images/larnaca/bedroom-sofa.jpg', caption: 'Second bedroom with sofa bed' },
-    { src: 'images/larnaca/loft-bedroom.jpg', caption: 'Loft bedroom with twin beds' },
-    { src: 'images/larnaca/balcony.jpg', caption: 'Balcony with outdoor dining and views' },
-    { src: 'images/larnaca/sunset-view.jpg', caption: 'Sunset from the balcony' }
+    { src: 'images/larnaca/8.jpeg', caption: 'Open-plan living room and kitchen' },
+    { src: 'images/larnaca/7.jpeg', caption: 'Living room with Smart TV and balcony' },
+    { src: 'images/larnaca/4.jpeg', caption: 'Kitchen and dining area' },
+    { src: 'images/larnaca/3.jpeg', caption: 'Double bedroom with air conditioning' },
+    { src: 'images/larnaca/5.jpeg', caption: 'Second bedroom with sofa bed' },
+    { src: 'images/larnaca/1.jpeg', caption: 'Loft bedroom with twin beds' },
+    { src: 'images/larnaca/2.jpeg', caption: 'Balcony with outdoor dining and views' },
+    { src: 'images/larnaca/6.jpeg', caption: 'Sunset from the balcony' }
 ];
 
 let currentIndex = 0;
