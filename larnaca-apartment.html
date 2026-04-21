@@ -90,6 +90,26 @@
         .sidebar-card .contact-alt { text-align: center; margin-top: 16px; font-size: 13px; color: var(--ink-muted); }
         .sidebar-card .contact-alt a { color: var(--accent); text-decoration: none; font-weight: 600; }
 
+        /* BEDROOM GRID */
+        .bedroom-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; margin: 16px 0; }
+        .bed-card { background: var(--bg-warm); border: 1px solid var(--border); border-radius: 10px; padding: 16px; text-align: center; }
+        .bed-icon { font-size: 24px; margin-bottom: 6px; }
+        .bed-name { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+        .bed-desc { font-size: 12px; color: var(--ink-soft); line-height: 1.5; }
+
+        /* EXPERIENCE SECTION */
+        .experience-section { background: var(--ink); padding: 64px 32px; }
+        .experience-inner { max-width: 1200px; margin: 0 auto; }
+        .experience-inner .section-head { text-align: center; margin-bottom: 40px; }
+        .experience-inner .section-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-light); margin-bottom: 12px; }
+        .experience-inner h2 { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 500; color: var(--bg); letter-spacing: -1px; }
+        .exp-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+        .exp-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 14px; padding: 28px 22px; text-align: center; transition: background 0.2s, transform 0.2s; }
+        .exp-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-2px); }
+        .exp-emoji { font-size: 32px; margin-bottom: 14px; }
+        .exp-card h3 { font-size: 15px; font-weight: 700; color: var(--bg); margin-bottom: 8px; }
+        .exp-card p { font-size: 13px; color: rgba(250,248,244,0.55); line-height: 1.6; }
+
         .cta-section { max-width: 1200px; margin: 0 auto; padding: 64px 32px; text-align: center; }
         .cta-card { background: var(--sea); border-radius: 20px; padding: 56px 40px; color: white; }
         .cta-card h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 4vw, 42px); font-weight: 500; margin-bottom: 16px; }
@@ -106,6 +126,7 @@
             .gallery-grid { grid-template-columns: repeat(2, 1fr); }
             .content-layout { grid-template-columns: 1fr; }
             .sidebar-card { position: static; }
+            .exp-grid { grid-template-columns: 1fr 1fr; }
         }
         @media (max-width: 600px) {
             .nav-links { display: none; }
@@ -189,12 +210,7 @@
 <div class="content-layout">
     <div class="content-main">
         <h2>About the Apartment</h2>
-        <p>Our Larnaca apartment is a modern, fully furnished split-level property in one of Cyprus's most historic and vibrant coastal cities. Spread over two floors with an open-plan living area, it's ideal for couples, families, or groups of friends looking for a comfortable and affordable base to explore the island.</p>
-        <p>The ground floor features a spacious open-plan living room with a large L-shaped sofa, smart TV, and a fully equipped kitchen with breakfast bar and dining table seating four. Sliding doors open onto a private balcony with outdoor dining furniture and panoramic views — perfect for watching the famous Larnaca sunsets.</p>
-        <p>Upstairs, a charming loft bedroom with exposed wooden beams offers twin beds and its own shower room, giving larger groups extra privacy and flexibility.</p>
-
-        <h2>Bedrooms & Sleeping</h2>
-        <p>The apartment sleeps up to 6 guests across three sleeping areas. The main double bedroom has a king-size bed with fresh linens and air conditioning. A second ground-floor bedroom has a comfortable sofa bed with en-suite access. The upper loft has two single beds and its own shower, ideal for older children or an extra couple.</p>
+        <p>A modern split-level apartment in Larnaca with open-plan living, a private balcony with sunset views, and a loft bedroom with exposed wooden beams. The perfect base for exploring everything Cyprus has to offer.</p>
 
         <h2>Amenities</h2>
         <div class="amenities-grid">
@@ -210,14 +226,24 @@
             <div class="amenity-item"><span>☕</span> Coffee maker</div>
         </div>
 
-        <h2>Location</h2>
-        <p>Larnaca is the gateway to Cyprus, with the island's main international airport just 15 minutes away. The apartment is well-positioned for exploring everything the city and island has to offer, with easy access to Finikoudes Beach (the famous palm-tree-lined promenade), the medieval castle, the old Turkish quarter of Skala, and dozens of restaurants and cafes.</p>
-        <p>Larnaca is also perfectly positioned for day trips: the Troodos Mountains are about 90 minutes away, Ayia Napa and Protaras beaches are 45 minutes east, and the capital Nicosia is 45 minutes north. Limassol and Paphos are easily reachable along the coast.</p>
-
-        <h2>Things to Do in Larnaca</h2>
-        <p>Larnaca has a rich history stretching back over 6,000 years. The city's highlights include the Church of Saint Lazarus (a stunning 9th-century stone church said to house the tomb of the biblical Lazarus), the medieval Larnaca Castle, and the Hala Sultan Tekke mosque on the banks of the Larnaca Salt Lake — a winter resting spot for thousands of flamingos.</p>
-        <p>For beach lovers, the McKenzie Beach area just south of the airport offers excellent seafood restaurants with views of planes landing overhead, while the quieter beaches of Pervolia and Mazotos are a short drive away. The famous Zenobia wreck — one of the world's top 10 dive sites — is accessible from Larnaca's fishing harbour.</p>
-        <p>In the evenings, Finikoudes promenade comes alive with bars, cafes, and street performers. For a more authentic experience, head to the backstreets of Skala for traditional Cypriot meze at family-run tavernas.</p>
+        <h2>Sleeping Arrangements</h2>
+        <div class="bedroom-grid">
+            <div class="bed-card">
+                <div class="bed-icon">👑</div>
+                <div class="bed-name">Main Bedroom</div>
+                <div class="bed-desc">King bed · AC · Fresh linens</div>
+            </div>
+            <div class="bed-card">
+                <div class="bed-icon">🛋️</div>
+                <div class="bed-name">Second Bedroom</div>
+                <div class="bed-desc">Sofa bed · En-suite access</div>
+            </div>
+            <div class="bed-card">
+                <div class="bed-icon">🏠</div>
+                <div class="bed-name">Loft</div>
+                <div class="bed-desc">Twin beds · Own shower · Wooden beams</div>
+            </div>
+        </div>
     </div>
 
     <div>
@@ -235,6 +261,58 @@
         </div>
     </div>
 </div>
+
+<!-- ══ EXPERIENCE SECTION ══ -->
+<section class="experience-section">
+    <div class="experience-inner">
+        <div class="section-head">
+            <div class="section-eyebrow">Explore Larnaca</div>
+            <h2>What you can do here</h2>
+        </div>
+        <div class="exp-grid">
+            <div class="exp-card">
+                <div class="exp-emoji">🏖️</div>
+                <h3>Finikoudes Beach</h3>
+                <p>The iconic palm-lined promenade with golden sand, beach bars, and cafes stretching along the waterfront.</p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-emoji">🤿</div>
+                <h3>Zenobia Wreck Dive</h3>
+                <p>One of the world's top 10 dive sites — a sunken ferry accessible right from Larnaca's harbour.</p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-emoji">🍽️</div>
+                <h3>Cypriot Meze</h3>
+                <p>Traditional tavernas in the old town of Skala serving endless plates of authentic Cypriot food.</p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-emoji">🏛️</div>
+                <h3>Church of St Lazarus</h3>
+                <p>A stunning 9th-century stone church in the heart of Larnaca, said to house the tomb of Lazarus.</p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-emoji">🦩</div>
+                <h3>Salt Lake & Flamingos</h3>
+                <p>Thousands of flamingos visit in winter. The Hala Sultan Tekke mosque sits on the lakeshore.</p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-emoji">🏝️</div>
+                <h3>Ayia Napa & Protaras</h3>
+                <p>Cyprus's best beaches are just 45 minutes east — crystal coves, sea caves, and beach clubs.</p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-emoji">⛰️</div>
+                <h3>Troodos Mountains</h3>
+                <p>Scenic mountain villages, hiking trails, and painted Byzantine churches. 90 minutes inland.</p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-emoji">🌅</div>
+                <h3>McKenzie Beach</h3>
+                <p>Seafood restaurants with plane-spotting views as aircraft land over the beach. A Larnaca favourite.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="cta-section">
     <div class="cta-card">
