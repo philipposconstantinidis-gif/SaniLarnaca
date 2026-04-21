@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa in Sani Resort, Halkidiki — 5 Bedrooms, Private Pool, Beachfront | Theta Villas</title>
+    <meta name="description" content="Luxury 5-bedroom villa for rent in Sani Resort, Kassandra, Halkidiki, Greece. Private pool, 4 bathrooms, beachfront with panoramic sea views. Book direct for the best rates.">
+    <meta name="keywords" content="sani resort villa, villa rental halkidiki, luxury villa halkidiki, sani resort, sani halkidiki, villa with pool greece, sani beach, kassandra sani beach, halkidiki holidays, villa greece for rent, sani resort greece, sani club kassandra halkidiki, villa holidays greece, villas in greece with private pool">
+    <link rel="canonical" href="https://thetavillas.com/sani-villa.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #FAF8F4; --bg-warm: #F3EDE4; --surface: #FFFFFF; --ink: #1B1915; --ink-soft: #6B635A;
+            --ink-muted: #A39B90; --accent: #8B6914; --accent-light: #C9A84C; --accent-soft: #F8F0DC;
+            --sea: #2B5D7C; --sea-soft: #E8F0F4; --border: #E8E2D8; --border-strong: #D4CCBE;
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Outfit', sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+        /* NAV */
+        .nav-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,248,244,0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(232,226,216,0.6); }
+        .nav-inner { max-width: 1200px; margin: 0 auto; padding: 16px 32px; display: flex; align-items: center; justify-content: space-between; }
+        .nav-brand { display: flex; align-items: center; text-decoration: none; }
+        .nav-brand .theta { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; color: var(--ink); }
+        .nav-brand .theta em { font-style: italic; color: var(--accent); }
+        .nav-links { display: flex; gap: 32px; align-items: center; }
+        .nav-links a { font-size: 14px; font-weight: 500; color: var(--ink-soft); text-decoration: none; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--ink); }
+        .nav-links a.active { color: var(--accent); }
+        .nav-cta { padding: 10px 22px; background: var(--ink); color: var(--bg) !important; border-radius: 6px; font-weight: 600; font-size: 13px; }
+        .nav-cta:hover { background: var(--sea) !important; }
+        .hamburger { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; }
+        .hamburger span { display: block; width: 24px; height: 2px; background: var(--ink); }
+
+        /* PAGE HERO */
+        .page-hero { padding: 120px 32px 0; max-width: 1200px; margin: 0 auto; }
+        .breadcrumb { font-size: 13px; color: var(--ink-muted); margin-bottom: 20px; }
+        .breadcrumb a { color: var(--ink-muted); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--accent); }
+        .page-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 5vw, 56px); font-weight: 500; line-height: 1.08; letter-spacing: -1.5px; margin-bottom: 16px; }
+        .page-hero h1 em { font-style: italic; color: var(--sea); }
+        .page-subtitle { font-size: 17px; color: var(--ink-soft); max-width: 640px; line-height: 1.7; margin-bottom: 24px; }
+        .hero-features { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 32px; }
+        .hero-feat { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: var(--ink); background: var(--surface); border: 1px solid var(--border); padding: 10px 18px; border-radius: 8px; }
+
+        /* ── HERO GALLERY (5-image grid) ── */
+        .hero-gallery {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 32px 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: 240px 240px;
+            gap: 6px;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .hero-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: filter 0.2s;
+        }
+        .hero-gallery img:hover { filter: brightness(0.9); }
+        .hero-gallery img:first-child { grid-row: 1 / 3; }
+
+        /* ── FULL GALLERY GRID ── */
+        .gallery-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 32px 48px;
+        }
+        .gallery-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 16px;
+        }
+        .gallery-header h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .gallery-header .photo-count {
+            font-size: 13px;
+            color: var(--ink-muted);
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 6px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            aspect-ratio: 3/2;
+            object-fit: cover;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: filter 0.2s, transform 0.2s;
+        }
+        .gallery-grid img:hover {
+            filter: brightness(0.9);
+            transform: scale(1.01);
+        }
+
+        /* ── LIGHTBOX ── */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            background: rgba(0,0,0,0.95);
+            align-items: center;
+            justify-content: center;
+        }
+        .lightbox.open { display: flex; }
+        .lightbox img {
+            max-width: 90vw;
+            max-height: 85vh;
+            object-fit: contain;
+            border-radius: 4px;
+            user-select: none;
+        }
+        .lb-close {
+            position: absolute;
+            top: 20px;
+            right: 28px;
+            background: none;
+            border: none;
+            color: rgba(255,255,255,0.7);
+            font-size: 32px;
+            cursor: pointer;
+            z-index: 1001;
+            padding: 8px;
+            line-height: 1;
+        }
+        .lb-close:hover { color: white; }
+        .lb-prev, .lb-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.12);
+            border: none;
+            color: white;
+            font-size: 28px;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+        .lb-prev:hover, .lb-next:hover { background: rgba(255,255,255,0.25); }
+        .lb-prev { left: 20px; }
+        .lb-next { right: 20px; }
+        .lb-counter {
+            position: absolute;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255,255,255,0.5);
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .lb-caption {
+            position: absolute;
+            bottom: 48px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255,255,255,0.8);
+            font-size: 15px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        /* ── CONTENT LAYOUT ── */
+        .content-layout {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 32px 64px;
+            display: grid;
+            grid-template-columns: 1.8fr 1fr;
+            gap: 48px;
+        }
+        .content-main h2 { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; margin: 36px 0 16px; letter-spacing: -0.5px; }
+        .content-main h2:first-child { margin-top: 0; }
+        .content-main p { font-size: 15px; color: var(--ink-soft); line-height: 1.75; margin-bottom: 14px; }
+        .amenities-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+        .amenity-item { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--ink); font-weight: 500; padding: 12px 16px; background: var(--bg-warm); border-radius: 8px; }
+        .amenity-item span { font-size: 18px; }
+
+        /* SIDEBAR */
+        .sidebar-card { position: sticky; top: 100px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+        .sidebar-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 600; margin-bottom: 8px; }
+        .sidebar-card .price-note { font-size: 13px; color: var(--ink-muted); margin-bottom: 24px; }
+        .sidebar-card .info-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+        .sidebar-card .info-label { color: var(--ink-soft); }
+        .sidebar-card .info-value { font-weight: 600; color: var(--ink); }
+        .sidebar-card .cta-btn { display: block; width: 100%; padding: 16px; background: var(--ink); color: var(--bg); border: none; border-radius: 10px; font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 600; cursor: pointer; text-align: center; text-decoration: none; margin-top: 24px; transition: background 0.2s; }
+        .sidebar-card .cta-btn:hover { background: var(--sea); }
+        .sidebar-card .contact-alt { text-align: center; margin-top: 16px; font-size: 13px; color: var(--ink-muted); }
+        .sidebar-card .contact-alt a { color: var(--accent); text-decoration: none; font-weight: 600; }
+
+        /* NEARBY */
+        .nearby-section { background: var(--bg-warm); padding: 64px 32px; }
+        .nearby-inner { max-width: 1200px; margin: 0 auto; }
+        .nearby-inner h2 { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 500; margin-bottom: 32px; text-align: center; }
+        .nearby-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .nearby-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+        .nearby-card h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+        .nearby-card .dist { font-size: 12px; color: var(--accent); font-weight: 600; margin-bottom: 8px; }
+        .nearby-card p { font-size: 13px; color: var(--ink-soft); line-height: 1.6; }
+
+        /* CTA */
+        .cta-section { max-width: 1200px; margin: 0 auto; padding: 64px 32px; text-align: center; }
+        .cta-card { background: var(--sea); border-radius: 20px; padding: 56px 40px; color: white; }
+        .cta-card h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 4vw, 42px); font-weight: 500; margin-bottom: 16px; }
+        .cta-card p { font-size: 16px; color: rgba(255,255,255,0.75); max-width: 500px; margin: 0 auto 28px; }
+        .cta-card .cta-btn { display: inline-block; padding: 14px 28px; background: white; color: var(--sea); border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 15px; }
+
+        /* FOOTER */
+        footer { border-top: 1px solid var(--border); padding: 32px; text-align: center; font-size: 12px; color: var(--ink-muted); }
+        footer a { color: var(--ink-muted); text-decoration: none; margin: 0 12px; }
+        footer a:hover { color: var(--accent); }
+
+        @media (max-width: 900px) {
+            .hero-gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 200px 200px; }
+            .hero-gallery img:first-child { grid-row: auto; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .content-layout { grid-template-columns: 1fr; }
+            .sidebar-card { position: static; }
+            .nearby-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 600px) {
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); padding: 24px 32px; border-bottom: 1px solid var(--border); gap: 16px; }
+            .hero-gallery { grid-template-columns: 1fr; grid-template-rows: auto; }
+            .hero-gallery img { height: 220px; }
+            .gallery-grid { grid-template-columns: 1fr 1fr; }
+            .hero-features { gap: 10px; }
+            .amenities-grid { grid-template-columns: 1fr; }
+            .lb-prev, .lb-next { width: 40px; height: 40px; font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="nav-bar">
+    <div class="nav-inner">
+        <a href="/" class="nav-brand"><span class="theta">Theta <em>Villas</em></span></a>
+        <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+        <nav class="nav-links">
+            <a href="/">Home</a>
+            <a href="/sani-villa.html" class="active">Sani Villa</a>
+            <a href="/larnaca-apartment.html">Larnaca</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html" class="nav-cta">Enquire Now</a>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="breadcrumb"><a href="/">Home</a> → Sani Villa</div>
+    <h1>Luxury villa in <em>Sani Resort</em>, Halkidiki</h1>
+    <p class="page-subtitle">A stunning 5-bedroom beachfront villa with private pool inside the exclusive Sani Resort on the Kassandra Peninsula, Halkidiki, Greece. Panoramic views of the Thermaic Gulf, landscaped gardens, and full resort access.</p>
+    <div class="hero-features">
+        <div class="hero-feat">🛏️ 5 Bedrooms</div>
+        <div class="hero-feat">🚿 4 Bathrooms</div>
+        <div class="hero-feat">🏊 Private Pool</div>
+        <div class="hero-feat">🏖️ Beachfront</div>
+        <div class="hero-feat">🅿️ 2 Parking</div>
+        <div class="hero-feat">👥 Up to 10 Guests</div>
+    </div>
+</section>
+
+<!-- ══ HERO GALLERY (5-image teaser) ══ -->
+<div class="hero-gallery">
+    <img src="images/sani/patio-lounge.jpg" alt="Covered patio with pool and sea view at Sani villa" onclick="openLightbox(0)" loading="eager">
+    <img src="images/sani/drone-aerial.jpg" alt="Aerial drone view of Sani villa with private pool" onclick="openLightbox(1)" loading="eager">
+    <img src="images/sani/pool-sunset.jpg" alt="Private pool at sunset with sea reflection" onclick="openLightbox(2)" loading="eager">
+    <img src="images/sani/master-bedroom.jpg" alt="Master bedroom with en-suite bathroom" onclick="openLightbox(3)" loading="lazy">
+    <img src="images/sani/poolside-loungers.jpg" alt="Poolside sun loungers and garden" onclick="openLightbox(4)" loading="lazy">
+</div>
+
+<!-- ══ FULL GALLERY ══ -->
+<section class="gallery-section">
+    <div class="gallery-header">
+        <h2>All Photos</h2>
+        <span class="photo-count">14 photos</span>
+    </div>
+    <div class="gallery-grid">
+        <img src="images/sani/patio-lounge.jpg" alt="Covered patio lounge with pool and sea view" onclick="openLightbox(0)" loading="lazy">
+        <img src="images/sani/drone-aerial.jpg" alt="Aerial view of villa and pool" onclick="openLightbox(1)" loading="lazy">
+        <img src="images/sani/pool-sunset.jpg" alt="Pool reflecting sunset clouds" onclick="openLightbox(2)" loading="lazy">
+        <img src="images/sani/pool-sunset-flowers.jpg" alt="Pool at golden hour with flowers" onclick="openLightbox(3)" loading="lazy">
+        <img src="images/sani/pool-sunset-wide.jpg" alt="Sunset over the Thermaic Gulf from the villa" onclick="openLightbox(4)" loading="lazy">
+        <img src="images/sani/garden-sunset-view.jpg" alt="Garden view towards the sea at sunset" onclick="openLightbox(5)" loading="lazy">
+        <img src="images/sani/poolside-loungers.jpg" alt="Sun loungers by the pool with garden shade" onclick="openLightbox(6)" loading="lazy">
+        <img src="images/sani/garden-deck.jpg" alt="Garden deck with chairs under the trees" onclick="openLightbox(7)" loading="lazy">
+        <img src="images/sani/master-bedroom.jpg" alt="Master bedroom with en-suite and wall art" onclick="openLightbox(8)" loading="lazy">
+        <img src="images/sani/master-suite.jpg" alt="Master suite with balcony views and baby cot" onclick="openLightbox(9)" loading="lazy">
+        <img src="images/sani/bedroom-2.jpg" alt="First floor double bedroom" onclick="openLightbox(10)" loading="lazy">
+        <img src="images/sani/bedroom-3.jpg" alt="Double bedroom with ship painting" onclick="openLightbox(11)" loading="lazy">
+        <img src="images/sani/bedroom-twin.jpg" alt="Ground floor twin bedroom with sofa bed" onclick="openLightbox(12)" loading="lazy">
+        <img src="images/sani/bedroom-twin-2.jpg" alt="Twin bedroom with wooden shutters" onclick="openLightbox(13)" loading="lazy">
+    </div>
+</section>
+
+<!-- ══ LIGHTBOX ══ -->
+<div class="lightbox" id="lightbox">
+    <button class="lb-close" onclick="closeLightbox()">&times;</button>
+    <button class="lb-prev" onclick="prevPhoto()">‹</button>
+    <img id="lb-img" src="" alt="">
+    <button class="lb-next" onclick="nextPhoto()">›</button>
+    <div class="lb-caption" id="lb-caption"></div>
+    <div class="lb-counter" id="lb-counter"></div>
+</div>
+
+<div class="content-layout">
+    <div class="content-main">
+        <h2>About the Villa</h2>
+        <p>Welcome to our luxury villa in the heart of Sani Resort, Halkidiki — one of Greece's most exclusive and sought-after holiday destinations. This spacious 5-bedroom property sits within the gated Sani complex on the Kassandra Peninsula, offering a rare combination of privacy, luxury, and full resort access.</p>
+        <p>The villa features a large private swimming pool surrounded by meticulously landscaped gardens, with panoramic views across Sani Beach to the turquoise waters of the Thermaic Gulf. Stepping out of the garden, you're just moments from the pristine beach below and the lush pine forest that borders the resort.</p>
+        <p>Inside, the villa is arranged over two floors with generous living spaces, a fully equipped modern kitchen, and five bedrooms sleeping up to 10 guests comfortably. Four bathrooms, air conditioning throughout, and high-speed WiFi ensure a comfortable stay even in the height of summer.</p>
+
+        <h2>Bedrooms & Sleeping</h2>
+        <p>The villa accommodates up to 10 guests across five bedrooms. The master bedroom features a king-size bed with an en-suite bathroom and private balcony overlooking the pool and sea. Two further double bedrooms and two twin bedrooms provide flexible sleeping arrangements for families or groups. All bedrooms have built-in wardrobes, air conditioning, and fresh linens.</p>
+
+        <h2>Amenities</h2>
+        <div class="amenities-grid">
+            <div class="amenity-item"><span>🏊</span> Private swimming pool</div>
+            <div class="amenity-item"><span>🌊</span> Beachfront location</div>
+            <div class="amenity-item"><span>❄️</span> Air conditioning throughout</div>
+            <div class="amenity-item"><span>📶</span> High-speed WiFi</div>
+            <div class="amenity-item"><span>🍳</span> Fully equipped kitchen</div>
+            <div class="amenity-item"><span>📺</span> Smart TV & satellite</div>
+            <div class="amenity-item"><span>🧺</span> Washing machine & dryer</div>
+            <div class="amenity-item"><span>🅿️</span> 2 private parking spaces</div>
+            <div class="amenity-item"><span>🌿</span> Landscaped garden</div>
+            <div class="amenity-item"><span>🍽️</span> Outdoor dining area</div>
+            <div class="amenity-item"><span>🛡️</span> Safe deposit box</div>
+            <div class="amenity-item"><span>👶</span> Baby cot available</div>
+        </div>
+
+        <h2>Sani Resort Access</h2>
+        <p>As a villa within the Sani Resort complex, guests have full access to the resort's world-class facilities. This includes multiple restaurants and bars along the Sani Marina, the Sani Dunes and Sani Club beach bars, spa and wellness centres, tennis courts, watersports, and supervised kids' clubs. The resort is a gated, eco-friendly community with 24-hour security, making it exceptionally safe for families.</p>
+        <p>Sani Resort has consistently been voted one of the best family resorts in Europe and holds multiple awards for sustainability. The marina hosts regular events, live music, and an annual music festival during the summer months.</p>
+
+        <h2>Getting Here</h2>
+        <p>The villa is approximately 1 hour by car from Thessaloniki Airport (SKG). We can arrange private airport transfers for your convenience — just mention it when you enquire. The road from Thessaloniki to the Kassandra Peninsula is well-maintained and scenic, passing through the olive groves and coastal villages of Halkidiki.</p>
+        <p>Alternatively, a hire car gives you the flexibility to explore the rest of Halkidiki's three peninsulas — Kassandra, Sithonia, and the dramatic Mount Athos peninsula. We're happy to recommend hire car companies and suggest day trips.</p>
+
+        <h2>Things to Do in Halkidiki</h2>
+        <p>Halkidiki is one of northern Greece's most beautiful regions, famous for its crystal-clear waters, pine-covered hills, and relaxed pace of life. Beyond the resort, there's plenty to explore: the ancient ruins at Olynthos and Stagira (birthplace of Aristotle), boat trips around the Sithonia coastline, traditional fishing villages like Afitos and Neos Marmaras, and some of the best beaches in Greece including Kavourotrypes and Karidi Beach.</p>
+        <p>For families, Waterland Thessaloniki is a popular day trip, and the Petralona Cave (with its famous 700,000-year-old stalactites) is around 30 minutes away. Thessaloniki itself is a vibrant city with exceptional food, Byzantine architecture, and a buzzing waterfront — well worth a day trip.</p>
+    </div>
+
+    <div>
+        <div class="sidebar-card">
+            <h3>Book This Villa</h3>
+            <p class="price-note">Contact us for seasonal rates and availability</p>
+            <div class="info-row"><span class="info-label">Location</span><span class="info-value">Sani Resort, Halkidiki</span></div>
+            <div class="info-row"><span class="info-label">Bedrooms</span><span class="info-value">5</span></div>
+            <div class="info-row"><span class="info-label">Bathrooms</span><span class="info-value">4</span></div>
+            <div class="info-row"><span class="info-label">Max Guests</span><span class="info-value">10</span></div>
+            <div class="info-row"><span class="info-label">Pool</span><span class="info-value">Private</span></div>
+            <div class="info-row"><span class="info-label">Min Stay</span><span class="info-value">7 nights (peak)</span></div>
+            <div class="info-row"><span class="info-label">Season</span><span class="info-value">May – October</span></div>
+            <a href="/contact.html" class="cta-btn">Enquire Now</a>
+            <div class="contact-alt">Or call <a href="tel:+306947527850">+30 694 752 7850</a></div>
+        </div>
+    </div>
+</div>
+
+<section class="nearby-section">
+    <div class="nearby-inner">
+        <h2>What's Nearby</h2>
+        <div class="nearby-grid">
+            <div class="nearby-card"><h4>Sani Beach</h4><div class="dist">2 min walk</div><p>Pristine, Blue Flag awarded beach with crystal-clear shallow waters. Perfect for families.</p></div>
+            <div class="nearby-card"><h4>Sani Marina</h4><div class="dist">10 min walk</div><p>Waterfront restaurants, boutique shops, and live music events throughout summer.</p></div>
+            <div class="nearby-card"><h4>Sani Dunes Beach Bar</h4><div class="dist">5 min walk</div><p>The resort's premier beach club with loungers, cocktails, and DJ sets.</p></div>
+            <div class="nearby-card"><h4>Kassandra Village</h4><div class="dist">15 min drive</div><p>Traditional Greek village with local tavernas, bakeries, and a weekly market.</p></div>
+            <div class="nearby-card"><h4>Afitos Village</h4><div class="dist">30 min drive</div><p>Charming hilltop village with stone architecture, artisan shops, and stunning sunset views.</p></div>
+            <div class="nearby-card"><h4>Thessaloniki Airport</h4><div class="dist">1 hour drive</div><p>Main international airport serving Halkidiki. Private transfers available.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="cta-card">
+        <h2>Ready to book the Sani Villa?</h2>
+        <p>Send us an enquiry and we'll get back to you within 24 hours with availability and rates.</p>
+        <a href="/contact.html" class="cta-btn">Enquire Now</a>
+    </div>
+</section>
+
+<footer>
+    <div style="margin-bottom: 16px;">
+        <a href="/">Home</a><a href="/sani-villa.html">Sani Villa</a><a href="/larnaca-apartment.html">Larnaca</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a>
+    </div>
+    &copy; 2026 Theta Villas. All rights reserved.
+</footer>
+
+<script>
+const photos = [
+    { src: 'images/sani/patio-lounge.jpg', caption: 'Covered patio with pool and sea view' },
+    { src: 'images/sani/drone-aerial.jpg', caption: 'Aerial view of the villa and private pool' },
+    { src: 'images/sani/pool-sunset.jpg', caption: 'Pool reflecting the sunset' },
+    { src: 'images/sani/pool-sunset-flowers.jpg', caption: 'Pool at golden hour' },
+    { src: 'images/sani/pool-sunset-wide.jpg', caption: 'Sunset over the Thermaic Gulf' },
+    { src: 'images/sani/garden-sunset-view.jpg', caption: 'Garden view towards the sea' },
+    { src: 'images/sani/poolside-loungers.jpg', caption: 'Poolside sun loungers' },
+    { src: 'images/sani/garden-deck.jpg', caption: 'Shaded garden deck' },
+    { src: 'images/sani/master-bedroom.jpg', caption: 'Master bedroom with en-suite' },
+    { src: 'images/sani/master-suite.jpg', caption: 'Master suite with sea views' },
+    { src: 'images/sani/bedroom-2.jpg', caption: 'First floor double bedroom' },
+    { src: 'images/sani/bedroom-3.jpg', caption: 'Double bedroom' },
+    { src: 'images/sani/bedroom-twin.jpg', caption: 'Twin bedroom with sofa bed' },
+    { src: 'images/sani/bedroom-twin-2.jpg', caption: 'Twin bedroom' }
+];
+
+let currentIndex = 0;
+
+function openLightbox(i) {
+    currentIndex = i;
+    showPhoto();
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+}
+
+function showPhoto() {
+    document.getElementById('lb-img').src = photos[currentIndex].src;
+    document.getElementById('lb-img').alt = photos[currentIndex].caption;
+    document.getElementById('lb-caption').textContent = photos[currentIndex].caption;
+    document.getElementById('lb-counter').textContent = (currentIndex + 1) + ' / ' + photos.length;
+}
+
+function nextPhoto() {
+    currentIndex = (currentIndex + 1) % photos.length;
+    showPhoto();
+}
+
+function prevPhoto() {
+    currentIndex = (currentIndex - 1 + photos.length) % photos.length;
+    showPhoto();
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', e => {
+    if (!document.getElementById('lightbox').classList.contains('open')) return;
+    if (e.key === 'ArrowRight') nextPhoto();
+    if (e.key === 'ArrowLeft') prevPhoto();
+    if (e.key === 'Escape') closeLightbox();
+});
+
+// Close on background click
+document.getElementById('lightbox').addEventListener('click', e => {
+    if (e.target === document.getElementById('lightbox')) closeLightbox();
+});
+</script>
+
+</body>
+</html>

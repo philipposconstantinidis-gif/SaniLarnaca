@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Enquire — Theta Villas | Book a Villa in Greece or Cyprus</title>
+    <meta name="description" content="Get in touch with Theta Villas. Enquire about availability and rates for our luxury villa in Sani Resort or our apartment in Larnaca, Cyprus.">
+    <link rel="canonical" href="https://thetavillas.com/contact.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --bg: #FAF8F4; --bg-warm: #F3EDE4; --surface: #FFFFFF; --ink: #1B1915; --ink-soft: #6B635A; --ink-muted: #A39B90; --accent: #8B6914; --accent-light: #C9A84C; --accent-soft: #F8F0DC; --sea: #2B5D7C; --border: #E8E2D8; --border-strong: #D4CCBE; }
+        body { font-family: 'Outfit', sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        .nav-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,248,244,0.92); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(232,226,216,0.6); }
+        .nav-inner { max-width: 1200px; margin: 0 auto; padding: 16px 32px; display: flex; align-items: center; justify-content: space-between; }
+        .nav-brand { text-decoration: none; }
+        .nav-brand .theta { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; color: var(--ink); }
+        .nav-brand .theta em { font-style: italic; color: var(--accent); }
+        .nav-links { display: flex; gap: 32px; align-items: center; }
+        .nav-links a { font-size: 14px; font-weight: 500; color: var(--ink-soft); text-decoration: none; }
+        .nav-links a:hover { color: var(--ink); }
+        .nav-links a.active { color: var(--accent); }
+        .nav-cta { padding: 10px 22px; background: var(--ink); color: var(--bg) !important; border-radius: 6px; font-weight: 600; font-size: 13px; }
+        .hamburger { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; }
+        .hamburger span { display: block; width: 24px; height: 2px; background: var(--ink); }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 140px 32px 80px;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 64px;
+            align-items: start;
+        }
+
+        .contact-info h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(36px, 5vw, 52px);
+            font-weight: 500;
+            letter-spacing: -1px;
+            margin-bottom: 16px;
+            line-height: 1.1;
+        }
+        .contact-info h1 em { font-style: italic; color: var(--sea); }
+        .contact-info > p {
+            font-size: 16px;
+            color: var(--ink-soft);
+            line-height: 1.7;
+            margin-bottom: 32px;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 24px;
+            padding: 20px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+        .contact-method .icon {
+            width: 44px;
+            height: 44px;
+            background: var(--accent-soft);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        .contact-method h3 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .contact-method p {
+            font-size: 14px;
+            color: var(--ink-soft);
+            margin: 0;
+        }
+        .contact-method a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* FORM */
+        .form-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+        }
+        .form-card h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .form-card .form-desc {
+            font-size: 14px;
+            color: var(--ink-muted);
+            margin-bottom: 28px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        .form-group {
+            margin-bottom: 16px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--ink-soft);
+            margin-bottom: 8px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 15px;
+            color: var(--ink);
+            background: var(--bg);
+            border: 1.5px solid var(--border-strong);
+            border-radius: 10px;
+            outline: none;
+            transition: border-color 0.15s, box-shadow 0.15s;
+        }
+        .form-group select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B635A' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            padding-right: 40px;
+            cursor: pointer;
+        }
+        .form-group textarea { min-height: 120px; resize: vertical; }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--sea);
+            box-shadow: 0 0 0 3px rgba(43,93,124,0.1);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: var(--ink);
+            color: var(--bg);
+            border: none;
+            border-radius: 10px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 8px;
+        }
+        .submit-btn:hover { background: var(--sea); }
+
+        .form-note {
+            text-align: center;
+            margin-top: 16px;
+            font-size: 12px;
+            color: var(--ink-muted);
+        }
+
+        footer { border-top: 1px solid var(--border); padding: 32px; text-align: center; font-size: 12px; color: var(--ink-muted); }
+        footer a { color: var(--ink-muted); text-decoration: none; margin: 0 12px; }
+
+        @media (max-width: 900px) {
+            .container { grid-template-columns: 1fr; gap: 40px; }
+        }
+        @media (max-width: 600px) {
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); padding: 24px 32px; border-bottom: 1px solid var(--border); gap: 16px; }
+            .container { padding: 120px 20px 60px; }
+            .form-card { padding: 28px; }
+            .form-row { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="nav-bar"><div class="nav-inner"><a href="/" class="nav-brand"><span class="theta">Theta <em>Villas</em></span></a><button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button><nav class="nav-links"><a href="/">Home</a><a href="/sani-villa.html">Sani Villa</a><a href="/larnaca-apartment.html">Larnaca</a><a href="/about.html">About</a><a href="/contact.html" class="nav-cta active">Enquire Now</a></nav></div></header>
+
+<div class="container">
+    <div class="contact-info">
+        <h1>Get in <em>touch</em></h1>
+        <p>Ready to book, or have a question? We'd love to hear from you. Send us an enquiry and we'll respond within 24 hours with availability, rates, and anything else you need to know.</p>
+
+        <div class="contact-method">
+            <div class="icon">📧</div>
+            <div>
+                <h3>Email</h3>
+                <p><a href="mailto:hello@thetavillas.com">hello@thetavillas.com</a></p>
+            </div>
+        </div>
+
+        <div class="contact-method">
+            <div class="icon">📞</div>
+            <div>
+                <h3>Phone / WhatsApp</h3>
+                <p><a href="tel:+306947527850">+30 694 752 7850</a></p>
+                <p style="font-size: 12px; color: var(--ink-muted); margin-top: 4px;">Available 9am–9pm (Greece time)</p>
+            </div>
+        </div>
+
+        <div class="contact-method">
+            <div class="icon">⭐</div>
+            <div>
+                <h3>Reviews</h3>
+                <p><a href="https://www.tripadvisor.ie/VacationRentalReview-g1574376-d25248562-Luxury_Villa_in_Sani_Halkidiki_Greece-Sani_Kassandra_Halkidiki_Region_Central_Macedo.html" target="_blank" rel="noopener">Read our reviews on TripAdvisor</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-card">
+        <h2>Send an Enquiry</h2>
+        <p class="form-desc">Fill in the form below and we'll get back to you within 24 hours.</p>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" placeholder="Your first name" required>
+            </div>
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="Your last name" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-group">
+            <label>Which Property?</label>
+            <select>
+                <option value="">Select a property</option>
+                <option value="sani">Sani Villa — Halkidiki, Greece</option>
+                <option value="larnaca">Larnaca Apartment — Cyprus</option>
+                <option value="both">Both / Not sure yet</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Check-in Date</label>
+                <input type="date">
+            </div>
+            <div class="form-group">
+                <label>Check-out Date</label>
+                <input type="date">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Number of Guests</label>
+                <select>
+                    <option>1</option><option>2</option><option selected>3</option><option>4</option>
+                    <option>5</option><option>6</option><option>7</option><option>8</option>
+                    <option>9</option><option>10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>How did you find us?</label>
+                <select>
+                    <option value="">Select</option>
+                    <option>Google Search</option>
+                    <option>TripAdvisor</option>
+                    <option>Social Media</option>
+                    <option>Friend / Word of Mouth</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Message (optional)</label>
+            <textarea placeholder="Tell us about your trip — special requests, questions, anything at all..."></textarea>
+        </div>
+
+        <button class="submit-btn" onclick="alert('Thank you for your enquiry! We will respond within 24 hours.')">Send Enquiry</button>
+        <p class="form-note">We respond to all enquiries within 24 hours. Your information is never shared.</p>
+    </div>
+</div>
+
+<footer><div style="margin-bottom: 16px;"><a href="/">Home</a><a href="/sani-villa.html">Sani Villa</a><a href="/larnaca-apartment.html">Larnaca</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a></div>&copy; 2026 Theta Villas. All rights reserved.</footer>
+</body>
+</html>
