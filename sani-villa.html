@@ -209,6 +209,26 @@
         .sidebar-card .contact-alt { text-align: center; margin-top: 16px; font-size: 13px; color: var(--ink-muted); }
         .sidebar-card .contact-alt a { color: var(--accent); text-decoration: none; font-weight: 600; }
 
+        /* BEDROOM GRID */
+        .bedroom-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; margin: 16px 0; }
+        .bed-card { background: var(--bg-warm); border: 1px solid var(--border); border-radius: 10px; padding: 16px; text-align: center; }
+        .bed-icon { font-size: 24px; margin-bottom: 6px; }
+        .bed-name { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+        .bed-desc { font-size: 12px; color: var(--ink-soft); line-height: 1.5; }
+
+        /* EXPERIENCE SECTION */
+        .experience-section { background: var(--ink); padding: 64px 32px; }
+        .experience-inner { max-width: 1200px; margin: 0 auto; }
+        .experience-inner .section-head { text-align: center; margin-bottom: 40px; }
+        .experience-inner .section-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-light); margin-bottom: 12px; }
+        .experience-inner h2 { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 500; color: var(--bg); letter-spacing: -1px; }
+        .exp-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+        .exp-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 14px; padding: 28px 22px; text-align: center; transition: background 0.2s, transform 0.2s; }
+        .exp-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-2px); }
+        .exp-emoji { font-size: 32px; margin-bottom: 14px; }
+        .exp-card h3 { font-size: 15px; font-weight: 700; color: var(--bg); margin-bottom: 8px; }
+        .exp-card p { font-size: 13px; color: rgba(250,248,244,0.55); line-height: 1.6; }
+
         /* NEARBY */
         .nearby-section { background: var(--bg-warm); padding: 64px 32px; }
         .nearby-inner { max-width: 1200px; margin: 0 auto; }
@@ -238,6 +258,7 @@
             .content-layout { grid-template-columns: 1fr; }
             .sidebar-card { position: static; }
             .nearby-grid { grid-template-columns: 1fr; }
+            .exp-grid { grid-template-columns: 1fr 1fr; }
         }
         @media (max-width: 600px) {
             .nav-links { display: none; }
@@ -327,12 +348,7 @@
 <div class="content-layout">
     <div class="content-main">
         <h2>About the Villa</h2>
-        <p>Welcome to our luxury villa in the heart of Sani Resort, Halkidiki — one of Greece's most exclusive and sought-after holiday destinations. This spacious 5-bedroom property sits within the gated Sani complex on the Kassandra Peninsula, offering a rare combination of privacy, luxury, and full resort access.</p>
-        <p>The villa features a large private swimming pool surrounded by meticulously landscaped gardens, with panoramic views across Sani Beach to the turquoise waters of the Thermaic Gulf. Stepping out of the garden, you're just moments from the pristine beach below and the lush pine forest that borders the resort.</p>
-        <p>Inside, the villa is arranged over two floors with generous living spaces, a fully equipped modern kitchen, and five bedrooms sleeping up to 10 guests comfortably. Four bathrooms, air conditioning throughout, and high-speed WiFi ensure a comfortable stay even in the height of summer.</p>
-
-        <h2>Bedrooms & Sleeping</h2>
-        <p>The villa accommodates up to 10 guests across five bedrooms. The master bedroom features a king-size bed with an en-suite bathroom and private balcony overlooking the pool and sea. Two further double bedrooms and two twin bedrooms provide flexible sleeping arrangements for families or groups. All bedrooms have built-in wardrobes, air conditioning, and fresh linens.</p>
+        <p>A spacious 5-bedroom villa inside the gated Sani Resort on the Kassandra Peninsula. Private pool, landscaped gardens, and panoramic sea views — with full access to the resort's world-class beaches, restaurants, and facilities.</p>
 
         <h2>Amenities</h2>
         <div class="amenities-grid">
@@ -350,17 +366,34 @@
             <div class="amenity-item"><span>👶</span> Baby cot available</div>
         </div>
 
-        <h2>Sani Resort Access</h2>
-        <p>As a villa within the Sani Resort complex, guests have full access to the resort's world-class facilities. This includes multiple restaurants and bars along the Sani Marina, the Sani Dunes and Sani Club beach bars, spa and wellness centres, tennis courts, watersports, and supervised kids' clubs. The resort is a gated, eco-friendly community with 24-hour security, making it exceptionally safe for families.</p>
-        <p>Sani Resort has consistently been voted one of the best family resorts in Europe and holds multiple awards for sustainability. The marina hosts regular events, live music, and an annual music festival during the summer months.</p>
-
-        <h2>Getting Here</h2>
-        <p>The villa is approximately 1 hour by car from Thessaloniki Airport (SKG). We can arrange private airport transfers for your convenience — just mention it when you enquire. The road from Thessaloniki to the Kassandra Peninsula is well-maintained and scenic, passing through the olive groves and coastal villages of Halkidiki.</p>
-        <p>Alternatively, a hire car gives you the flexibility to explore the rest of Halkidiki's three peninsulas — Kassandra, Sithonia, and the dramatic Mount Athos peninsula. We're happy to recommend hire car companies and suggest day trips.</p>
-
-        <h2>Things to Do in Halkidiki</h2>
-        <p>Halkidiki is one of northern Greece's most beautiful regions, famous for its crystal-clear waters, pine-covered hills, and relaxed pace of life. Beyond the resort, there's plenty to explore: the ancient ruins at Olynthos and Stagira (birthplace of Aristotle), boat trips around the Sithonia coastline, traditional fishing villages like Afitos and Neos Marmaras, and some of the best beaches in Greece including Kavourotrypes and Karidi Beach.</p>
-        <p>For families, Waterland Thessaloniki is a popular day trip, and the Petralona Cave (with its famous 700,000-year-old stalactites) is around 30 minutes away. Thessaloniki itself is a vibrant city with exceptional food, Byzantine architecture, and a buzzing waterfront — well worth a day trip.</p>
+        <h2>Bedrooms</h2>
+        <div class="bedroom-grid">
+            <div class="bed-card">
+                <div class="bed-icon">👑</div>
+                <div class="bed-name">Master Suite</div>
+                <div class="bed-desc">King bed · En-suite · Balcony with sea view</div>
+            </div>
+            <div class="bed-card">
+                <div class="bed-icon">🛏️</div>
+                <div class="bed-name">Bedroom 2</div>
+                <div class="bed-desc">Double bed · Wardrobe · Air conditioning</div>
+            </div>
+            <div class="bed-card">
+                <div class="bed-icon">🛏️</div>
+                <div class="bed-name">Bedroom 3</div>
+                <div class="bed-desc">Double bed · Wardrobe · Air conditioning</div>
+            </div>
+            <div class="bed-card">
+                <div class="bed-icon">🛏️</div>
+                <div class="bed-name">Bedroom 4</div>
+                <div class="bed-desc">Twin beds · Sofa bed · Air conditioning</div>
+            </div>
+            <div class="bed-card">
+                <div class="bed-icon">🛏️</div>
+                <div class="bed-name">Bedroom 5</div>
+                <div class="bed-desc">Twin beds · Air conditioning</div>
+            </div>
+        </div>
     </div>
 
     <div>
@@ -375,10 +408,62 @@
             <div class="info-row"><span class="info-label">Min Stay</span><span class="info-value">7 nights (peak)</span></div>
             <div class="info-row"><span class="info-label">Season</span><span class="info-value">May – October</span></div>
             <a href="/contact.html" class="cta-btn">Enquire Now</a>
-            <div class="contact-alt">Or call <a href="tel:+306947527850">+30 6947 527 850</a></div>
+            <div class="contact-alt">Or call <a href="tel:+306947527850">+30 694 752 7850</a></div>
         </div>
     </div>
 </div>
+
+<!-- ══ EXPERIENCE SECTION ══ -->
+<section class="experience-section">
+    <div class="experience-inner">
+        <div class="section-head">
+            <div class="section-eyebrow">The Sani Experience</div>
+            <h2>What you can do here</h2>
+        </div>
+        <div class="exp-grid">
+            <div class="exp-card">
+                <div class="exp-emoji">🏖️</div>
+                <h3>Blue Flag Beaches</h3>
+                <p>Pristine white sand just steps from the villa. Crystal-clear, shallow waters perfect for families.</p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-emoji">🍷</div>
+                <h3>Fine Dining</h3>
+                <p>Over 20 restaurants at Sani Marina — Greek mezze, seafood, Italian, sushi, and beachfront cocktail bars.</p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-emoji">⛵</div>
+                <h3>Watersports</h3>
+                <p>Kayaking, paddle boarding, jet skis, sailing, and snorkelling right from the resort's beach.</p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-emoji">🧖</div>
+                <h3>Spa & Wellness</h3>
+                <p>Full-service spa with massages, facials, and treatments. Fitness centre with sea views.</p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-emoji">👧</div>
+                <h3>Kids' Clubs</h3>
+                <p>Supervised kids' clubs for ages 4-12. Teen activities, football, and creative workshops.</p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-emoji">🎵</div>
+                <h3>Live Music & Events</h3>
+                <p>Sani Marina hosts live music, open-air cinema, and the annual Sani Festival every summer.</p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-emoji">🌲</div>
+                <h3>Nature Reserve</h3>
+                <p>Walk through a protected wetland and pine forest. Bird watching, nature trails, and guided eco-tours.</p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-emoji">🏛️</div>
+                <h3>Day Trips</h3>
+                <p>Ancient Olynthos, Aristotle's birthplace at Stagira, Thessaloniki, Petralona Cave, and Sithonia's hidden beaches.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="nearby-section">
     <div class="nearby-inner">
