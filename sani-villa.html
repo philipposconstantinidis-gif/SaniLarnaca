@@ -229,6 +229,14 @@
         .exp-card h3 { font-size: 15px; font-weight: 700; color: var(--bg); margin-bottom: 8px; }
         .exp-card p { font-size: 13px; color: rgba(250,248,244,0.55); line-height: 1.6; }
 
+        /* MAP SECTION */
+        .map-section { max-width: 1200px; margin: 0 auto; padding: 64px 32px; }
+        .map-inner { max-width: 1200px; margin: 0 auto; }
+        .map-inner .section-head { text-align: center; margin-bottom: 32px; }
+        .map-inner .section-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+        .map-inner h2 { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; color: var(--ink); letter-spacing: -0.5px; }
+        .map-wrap { border-radius: 12px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+
         /* NEARBY */
         .nearby-section { background: var(--bg-warm); padding: 64px 32px; }
         .nearby-inner { max-width: 1200px; margin: 0 auto; }
@@ -393,7 +401,7 @@
             <div class="bed-card">
                 <div class="bed-icon">🛏️</div>
                 <div class="bed-name">Bedroom 5</div>
-                <div class="bed-desc">Twin beds · Air conditioning</div>
+                <div class="bed-desc">Twin beds · Wardrobe · Fan</div>
             </div>
         </div>
     </div>
@@ -403,6 +411,7 @@
             <h3>Book This Villa</h3>
             <p class="price-note">Contact us for seasonal rates and availability</p>
             <div class="info-row"><span class="info-label">Location</span><span class="info-value">Sani Resort, Halkidiki</span></div>
+            <div class="info-row"><span class="info-label">Address</span><span class="info-value">Club Villa D4, Sani 630 77</span></div>
             <div class="info-row"><span class="info-label">Bedrooms</span><span class="info-value">5</span></div>
             <div class="info-row"><span class="info-label">Bathrooms</span><span class="info-value">4</span></div>
             <div class="info-row"><span class="info-label">Max Guests</span><span class="info-value">10</span></div>
@@ -467,6 +476,19 @@
     </div>
 </section>
 
+<!-- ══ LOCATION MAP ══ -->
+<section class="map-section">
+    <div class="map-inner">
+        <div class="section-head">
+            <div class="section-eyebrow">Location</div>
+            <h2>Club Villa D4, Sani 630 77, Greece</h2>
+        </div>
+        <div class="map-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.5!2d23.312038!3d40.0924498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a7d5002ecebee3%3A0x8675e3aaca2c8b88!2sLuxury%20Villa%20in%20Sani%20Theta%20Real%20Estate%20S.A.!5e0!3m2!1sen!2sgr!4v1700000000000!5m2!1sen!2sgr" width="100%" height="450" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
 <section class="nearby-section">
     <div class="nearby-inner">
         <h2>What's Nearby</h2>
@@ -474,7 +496,7 @@
             <div class="nearby-card"><h4>Sani Beach</h4><div class="dist">2 min walk</div><p>Pristine, Blue Flag awarded beach with crystal-clear shallow waters. Perfect for families.</p></div>
             <div class="nearby-card"><h4>Sani Marina</h4><div class="dist">10 min walk</div><p>Waterfront restaurants, boutique shops, and live music events throughout summer.</p></div>
             <div class="nearby-card"><h4>Sani Dunes Beach Bar</h4><div class="dist">5 min walk</div><p>The resort's premier beach club with loungers, cocktails, and DJ sets.</p></div>
-            <div class="nearby-card"><h4>Kallithea Village</h4><div class="dist">15 min drive</div><p>Charming village with traditional tavernas, lively bars, and some of the best nightlife on the Kassandra Peninsula.</p></div>
+            <div class="nearby-card"><h4>Kassandra Village</h4><div class="dist">15 min drive</div><p>Traditional Greek village with local tavernas, bakeries, and a weekly market.</p></div>
             <div class="nearby-card"><h4>Afitos Village</h4><div class="dist">30 min drive</div><p>Charming hilltop village with stone architecture, artisan shops, and stunning sunset views.</p></div>
             <div class="nearby-card"><h4>Thessaloniki Airport</h4><div class="dist">1 hour drive</div><p>Main international airport serving Halkidiki. Private transfers available.</p></div>
         </div>
@@ -560,3 +582,4 @@ document.getElementById('lightbox').addEventListener('click', e => {
 
 </body>
 </html>
+
