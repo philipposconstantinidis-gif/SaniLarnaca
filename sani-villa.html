@@ -249,6 +249,10 @@
         .nearby-card h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
         .nearby-card .dist { font-size: 12px; color: var(--accent); font-weight: 600; margin-bottom: 8px; }
         .nearby-card p { font-size: 13px; color: var(--ink-soft); line-height: 1.6; }
+        .nearby-link { text-decoration: none; color: var(--ink); display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; }
+        .nearby-link:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+        .nearby-cta { margin-top: auto; padding-top: 10px; font-size: 12px; font-weight: 600; color: var(--accent); opacity: 0.6; transition: opacity 0.2s; }
+        .nearby-link:hover .nearby-cta { opacity: 1; }
 
         /* CTA */
         .cta-section { max-width: 1200px; margin: 0 auto; padding: 64px 32px; text-align: center; }
@@ -268,7 +272,7 @@
             .gallery-grid { grid-template-columns: repeat(2, 1fr); }
             .content-layout { grid-template-columns: 1fr; }
             .sidebar-card { position: static; }
-            .nearby-grid { grid-template-columns: 1fr; }
+            .nearby-grid { grid-template-columns: 1fr 1fr; }
             .exp-grid { grid-template-columns: 1fr 1fr; }
         }
         @media (max-width: 600px) {
@@ -503,14 +507,45 @@
 
 <section class="nearby-section">
     <div class="nearby-inner">
-        <h2>What's Nearby</h2>
+        <h2>Nightlife & Beach Bars</h2>
+        <p style="color: var(--ink-soft); font-size: 15px; margin-bottom: 24px;">The Kassandra Peninsula has some of the best nightlife in Greece. These clubs and beach bars are all a short drive from the villa — perfect for a night out or a sunset session.</p>
         <div class="nearby-grid">
-            <div class="nearby-card"><h4>Sani Beach</h4><div class="dist">2 min walk</div><p>Pristine, Blue Flag awarded beach with crystal-clear shallow waters. Perfect for families.</p></div>
-            <div class="nearby-card"><h4>Sani Marina</h4><div class="dist">10 min walk</div><p>Waterfront restaurants, boutique shops, and live music events throughout summer.</p></div>
-            <div class="nearby-card"><h4>Sani Dunes Beach Bar</h4><div class="dist">5 min walk</div><p>The resort's premier beach club with loungers, cocktails, and DJ sets.</p></div>
-            <div class="nearby-card"><h4>Kallithea Village</h4><div class="dist">15 min drive</div><p>Charming village with traditional tavernas, lively bars, and some of the best nightlife on the Kassandra Peninsula.</p></div>
-            <div class="nearby-card"><h4>Afitos Village</h4><div class="dist">30 min drive</div><p>Charming hilltop village with stone architecture, artisan shops, and stunning sunset views.</p></div>
-            <div class="nearby-card"><h4>Thessaloniki Airport</h4><div class="dist">1 hour drive</div><p>Main international airport serving Halkidiki. Private transfers available.</p></div>
+            <a href="https://www.ahoy.gr/" target="_blank" rel="noopener" class="nearby-card nearby-link">
+                <h4>Ahoy Club</h4>
+                <div class="dist">Kallithea · 15 min drive</div>
+                <p>Legendary Halkidiki nightclub in the heart of Kallithea. International DJs, themed parties, and electric summer nights.</p>
+                <span class="nearby-cta">Visit Website →</span>
+            </a>
+            <a href="https://www.instagram.com/pearlclubhalkidiki/" target="_blank" rel="noopener" class="nearby-card nearby-link">
+                <h4>Pearl Club</h4>
+                <div class="dist">Kallithea · 15 min drive</div>
+                <p>Stylish open-air club with top DJs and bottle service. One of Kassandra's most popular late-night spots.</p>
+                <span class="nearby-cta">View on Instagram →</span>
+            </a>
+            <a href="https://www.instagram.com/angelsclubchalkidiki/" target="_blank" rel="noopener" class="nearby-card nearby-link">
+                <h4>Angels Club</h4>
+                <div class="dist">Kallithea · 15 min drive</div>
+                <p>High-energy nightclub with live performances, resident DJs, and a vibrant crowd every summer weekend.</p>
+                <span class="nearby-cta">View on Instagram →</span>
+            </a>
+            <a href="https://edenofshaka.com/" target="_blank" rel="noopener" class="nearby-card nearby-link">
+                <h4>Eden of Shaka</h4>
+                <div class="dist">Kallithea · 20 min drive</div>
+                <p>The most impressive open-air nightclub in Northern Greece. International headliners, immersive production, and unforgettable nights under the stars.</p>
+                <span class="nearby-cta">Visit Website →</span>
+            </a>
+            <a href="https://www.instagram.com/spitaki_cocktail_bar/" target="_blank" rel="noopener" class="nearby-card nearby-link">
+                <h4>Spitaki Cocktail Bar</h4>
+                <div class="dist">Kallithea · 15 min drive</div>
+                <p>Cosy cocktail bar in Kallithea village. Handcrafted drinks, relaxed atmosphere, and a great spot for sundowners before heading out.</p>
+                <span class="nearby-cta">View on Instagram →</span>
+            </a>
+            <a href="https://www.cabanabeach.gr/" target="_blank" rel="noopener" class="nearby-card nearby-link">
+                <h4>Cabana Beach Bar</h4>
+                <div class="dist">Paliouri · 40 min drive</div>
+                <p>Premium beach club on one of Halkidiki's most beautiful beaches. Sushi, cocktails, watersports, massage, and sunset DJ sets. Worth the drive.</p>
+                <span class="nearby-cta">Visit Website →</span>
+            </a>
         </div>
     </div>
 </section>
