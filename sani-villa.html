@@ -228,6 +228,9 @@
         .exp-emoji { font-size: 32px; margin-bottom: 14px; }
         .exp-card h3 { font-size: 15px; font-weight: 700; color: var(--bg); margin-bottom: 8px; }
         .exp-card p { font-size: 13px; color: rgba(250,248,244,0.55); line-height: 1.6; }
+        .exp-link { text-decoration: none; display: flex; flex-direction: column; }
+        .exp-cta { margin-top: auto; padding-top: 14px; font-size: 12px; font-weight: 600; color: var(--accent-light); opacity: 0.7; transition: opacity 0.2s; }
+        .exp-card:hover .exp-cta { opacity: 1; }
 
         /* MAP SECTION */
         .map-section { max-width: 1200px; margin: 0 auto; padding: 64px 32px; }
@@ -430,48 +433,57 @@
         <div class="section-head">
             <div class="section-eyebrow">The Sani Experience</div>
             <h2>What you can do here</h2>
+            <p style="color: rgba(250,248,244,0.45); font-size: 14px; margin-top: 12px;">As a villa guest you have full access to the resort's world-class facilities. Click any card to explore and book.</p>
         </div>
         <div class="exp-grid">
-            <div class="exp-card">
-                <div class="exp-emoji">🏖️</div>
-                <h3>Blue Flag Beaches</h3>
-                <p>Pristine white sand just steps from the villa. Crystal-clear, shallow waters perfect for families.</p>
-            </div>
-            <div class="exp-card">
+            <a href="https://sani-resort.com/experiences/academies" target="_blank" rel="noopener" class="exp-card exp-link">
+                <div class="exp-emoji">🎾</div>
+                <h3>Academies</h3>
+                <p>Rafa Nadal Tennis Centre, Chelsea FC Football Academy, Bear Grylls Survival Academy, scuba diving, sailing, and water ski academies.</p>
+                <span class="exp-cta">Explore & Book →</span>
+            </a>
+            <a href="https://sani-resort.com/gastronomy/restaurants-bars" target="_blank" rel="noopener" class="exp-card exp-link">
                 <div class="exp-emoji">🍷</div>
-                <h3>Fine Dining</h3>
-                <p>Over 20 restaurants at Sani Marina — Greek mezze, seafood, Italian, sushi, and beachfront cocktail bars.</p>
-            </div>
-            <div class="exp-card">
+                <h3>Restaurants & Bars</h3>
+                <p>Over 20 restaurants at Sani Marina — Greek mezze, fresh seafood, Italian, sushi, and beachfront cocktail bars.</p>
+                <span class="exp-cta">View Restaurants →</span>
+            </a>
+            <a href="https://sani-resort.com/experiences/activities-on-the-water" target="_blank" rel="noopener" class="exp-card exp-link">
                 <div class="exp-emoji">⛵</div>
                 <h3>Watersports</h3>
-                <p>Kayaking, paddle boarding, jet skis, sailing, and snorkelling right from the resort's beach.</p>
-            </div>
-            <div class="exp-card">
+                <p>Kayaking, paddle boarding, jet skis, sailing, snorkelling, water skiing, and yacht charters — all from the resort's beach.</p>
+                <span class="exp-cta">Explore & Book →</span>
+            </a>
+            <a href="https://sani-resort.com/experiences/wellness-spa-resort" target="_blank" rel="noopener" class="exp-card exp-link">
                 <div class="exp-emoji">🧖</div>
                 <h3>Spa & Wellness</h3>
-                <p>Full-service spa with massages, facials, and treatments. Fitness centre with sea views.</p>
-            </div>
-            <div class="exp-card">
+                <p>Full-service spa with massages, facials, holistic treatments, and a fitness centre with sea views.</p>
+                <span class="exp-cta">Explore & Book →</span>
+            </a>
+            <a href="https://sani-resort.com/families" target="_blank" rel="noopener" class="exp-card exp-link">
                 <div class="exp-emoji">👧</div>
-                <h3>Kids' Clubs</h3>
-                <p>Supervised kids' clubs for ages 4-12. Teen activities, football, and creative workshops.</p>
-            </div>
-            <div class="exp-card">
+                <h3>Kids & Families</h3>
+                <p>Supervised kids' clubs (ages 4-12), teen activities, creative workshops, and children's menus by Donna Hay.</p>
+                <span class="exp-cta">Explore & Book →</span>
+            </a>
+            <a href="https://sani-resort.com/experiences/entertainment" target="_blank" rel="noopener" class="exp-card exp-link">
                 <div class="exp-emoji">🎵</div>
-                <h3>Live Music & Events</h3>
-                <p>Sani Marina hosts live music, open-air cinema, and the annual Sani Festival every summer.</p>
-            </div>
-            <div class="exp-card">
-                <div class="exp-emoji">🌲</div>
-                <h3>Nature Reserve</h3>
-                <p>Walk through a protected wetland and pine forest. Bird watching, nature trails, and guided eco-tours.</p>
-            </div>
-            <div class="exp-card">
+                <h3>Entertainment</h3>
+                <p>Live music, open-air cinema, Greek nights, live DJs, and the annual Sani Festival every summer at the Marina.</p>
+                <span class="exp-cta">What's On →</span>
+            </a>
+            <a href="https://sani-resort.com/beaches-pools" target="_blank" rel="noopener" class="exp-card exp-link">
+                <div class="exp-emoji">🏖️</div>
+                <h3>Beaches & Pools</h3>
+                <p>Blue Flag beaches with crystal-clear shallow waters, resort pools, and the Sani Dunes beach club with loungers and cocktails.</p>
+                <span class="exp-cta">Explore →</span>
+            </a>
+            <a href="https://sani-resort.com/experiences/local" target="_blank" rel="noopener" class="exp-card exp-link">
                 <div class="exp-emoji">🏛️</div>
-                <h3>Day Trips</h3>
-                <p>Ancient Olynthos, Aristotle's birthplace at Stagira, Thessaloniki, Petralona Cave, and Sithonia's hidden beaches.</p>
-            </div>
+                <h3>Local Excursions</h3>
+                <p>Ancient Olynthos, Aristotle's birthplace at Stagira, Thessaloniki, Petralona Cave, Mount Athos boat trips, and Sithonia's hidden coves.</p>
+                <span class="exp-cta">Explore & Book →</span>
+            </a>
         </div>
     </div>
 </section>
@@ -496,7 +508,7 @@
             <div class="nearby-card"><h4>Sani Beach</h4><div class="dist">2 min walk</div><p>Pristine, Blue Flag awarded beach with crystal-clear shallow waters. Perfect for families.</p></div>
             <div class="nearby-card"><h4>Sani Marina</h4><div class="dist">10 min walk</div><p>Waterfront restaurants, boutique shops, and live music events throughout summer.</p></div>
             <div class="nearby-card"><h4>Sani Dunes Beach Bar</h4><div class="dist">5 min walk</div><p>The resort's premier beach club with loungers, cocktails, and DJ sets.</p></div>
-            <div class="nearby-card"><h4>Kassandra Village</h4><div class="dist">15 min drive</div><p>Traditional Greek village with local tavernas, bakeries, and a weekly market.</p></div>
+            <div class="nearby-card"><h4>Kallithea Village</h4><div class="dist">15 min drive</div><p>Charming village with traditional tavernas, lively bars, and some of the best nightlife on the Kassandra Peninsula.</p></div>
             <div class="nearby-card"><h4>Afitos Village</h4><div class="dist">30 min drive</div><p>Charming hilltop village with stone architecture, artisan shops, and stunning sunset views.</p></div>
             <div class="nearby-card"><h4>Thessaloniki Airport</h4><div class="dist">1 hour drive</div><p>Main international airport serving Halkidiki. Private transfers available.</p></div>
         </div>
@@ -582,4 +594,3 @@ document.getElementById('lightbox').addEventListener('click', e => {
 
 </body>
 </html>
-
