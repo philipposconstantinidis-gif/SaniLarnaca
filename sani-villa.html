@@ -3,354 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Villa in Sani Resort, Halkidiki — 5 Bedrooms, Private Pool, Beachfront | Theta Villas</title>
+    <title>Luxury Villa in Sani Resort, Halkidiki — 5 Bedrooms, Private Pool, Beachfront | Theta Villas</title>
     <meta name="description" content="Luxury 5-bedroom villa for rent in Sani Resort, Kassandra, Halkidiki, Greece. Private pool, 4 bathrooms, beachfront with panoramic sea views. Book direct for the best rates.">
-    <meta name="keywords" content="sani resort villa, villa rental halkidiki, luxury villa halkidiki, sani resort, sani halkidiki, villa with pool greece, sani beach, kassandra sani beach, halkidiki holidays, villa greece for rent, sani resort greece, sani club kassandra halkidiki, villa holidays greece, villas in greece with private pool">
+    <meta name="keywords" content="sani resort villa, villa rental halkidiki, luxury villa halkidiki, sani resort, sani halkidiki, villa with pool greece, sani beach, kassandra sani beach, halkidiki holidays, villa greece for rent, sani resort greece">
     <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="canonical" href="https://thetavillas.com/sani-villa.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        :root {
-            --bg: #FAF8F4; --bg-warm: #F3EDE4; --surface: #FFFFFF; --ink: #1B1915; --ink-soft: #6B635A;
-            --ink-muted: #A39B90; --accent: #8B6914; --accent-light: #C9A84C; --accent-soft: #F8F0DC;
-            --sea: #2B5D7C; --sea-soft: #E8F0F4; --border: #E8E2D8; --border-strong: #D4CCBE;
-        }
+        :root { --bg: #F5F2ED; --bg-deep: #EDE9E1; --surface: #FFFFFF; --ink: #1A1714; --ink-soft: #6B635A; --ink-muted: #A39B90; --accent: #8B7234; --accent-light: #C9A84C; --sea: #2B5D7C; --border: #DDD6CB; }
         html { scroll-behavior: smooth; }
-        body { font-family: 'Outfit', sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 
         /* NAV */
-        .nav-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,248,244,0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(232,226,216,0.6); }
-        .nav-inner { max-width: 1200px; margin: 0 auto; padding: 16px 32px; display: flex; align-items: center; justify-content: space-between; }
-        .nav-brand { display: flex; align-items: center; text-decoration: none; }
-        .nav-logo { width: 32px; height: 32px; }
-        .nav-brand .theta { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; color: var(--ink); }
-        .nav-brand .theta em { font-style: italic; color: var(--accent); }
-        .nav-links { display: flex; gap: 32px; align-items: center; }
-        .nav-links a { font-size: 14px; font-weight: 500; color: var(--ink-soft); text-decoration: none; transition: color 0.2s; }
-        .nav-links a:hover { color: var(--ink); }
-        .nav-links a.active { color: var(--accent); }
-        .nav-cta { padding: 10px 22px; background: var(--ink); color: var(--bg) !important; border-radius: 6px; font-weight: 600; font-size: 13px; }
-        .nav-cta:hover { background: var(--sea) !important; }
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 24px 48px; display: flex; align-items: center; justify-content: space-between; transition: all 0.4s; mix-blend-mode: difference; }
+        .nav.scrolled { mix-blend-mode: normal; background: rgba(245,242,237,0.92); backdrop-filter: blur(20px); padding: 16px 48px; border-bottom: 1px solid rgba(221,214,203,0.5); }
+        .nav-brand { font-family: 'Cormorant', serif; font-size: 24px; font-weight: 600; color: white; text-decoration: none; transition: color 0.4s; }
+        .nav.scrolled .nav-brand { color: var(--ink); }
+        .nav-brand em { font-style: italic; }
+        .nav-links { display: flex; gap: 36px; align-items: center; }
+        .nav-links a { font-size: 13px; font-weight: 500; letter-spacing: 0.5px; color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.4s; }
+        .nav.scrolled .nav-links a { color: var(--ink-soft); }
+        .nav-links a:hover { color: white; }
+        .nav.scrolled .nav-links a:hover { color: var(--ink); }
+        .nav-cta { padding: 10px 24px; border: 1px solid rgba(255,255,255,0.3); border-radius: 100px; }
+        .nav.scrolled .nav-cta { border-color: var(--ink); color: var(--ink) !important; }
         .hamburger { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; }
-        .hamburger span { display: block; width: 24px; height: 2px; background: var(--ink); }
+        .hamburger span { display: block; width: 24px; height: 2px; background: white; transition: background 0.4s; }
+        .nav.scrolled .hamburger span { background: var(--ink); }
 
-        /* PAGE HERO */
-        .page-hero { padding: 120px 32px 0; max-width: 1200px; margin: 0 auto; }
-        .breadcrumb { font-size: 13px; color: var(--ink-muted); margin-bottom: 20px; }
-        .breadcrumb a { color: var(--ink-muted); text-decoration: none; }
-        .breadcrumb a:hover { color: var(--accent); }
-        .page-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 5vw, 56px); font-weight: 500; line-height: 1.08; letter-spacing: -1.5px; margin-bottom: 16px; }
-        .page-hero h1 em { font-style: italic; color: var(--sea); }
-        .page-subtitle { font-size: 17px; color: var(--ink-soft); max-width: 640px; line-height: 1.7; margin-bottom: 24px; }
-        .hero-features { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 32px; }
-        .hero-feat { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: var(--ink); background: var(--surface); border: 1px solid var(--border); padding: 10px 18px; border-radius: 8px; }
+        /* HERO */
+        .hero { position: relative; height: 75vh; min-height: 500px; display: flex; align-items: flex-end; overflow: hidden; }
+        .hero-bg { position: absolute; inset: 0; background: url('images/sani/sunset2.jpeg') center/cover no-repeat; }
+        .hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.2) 100%); }
+        .hero-content { position: relative; z-index: 2; padding: 0 64px 60px; max-width: 800px; }
+        .hero-eyebrow { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 4px; color: var(--accent-light); margin-bottom: 16px; }
+        .hero h1 { font-family: 'Cormorant', serif; font-size: clamp(40px, 6vw, 72px); font-weight: 300; font-style: italic; line-height: 1.05; letter-spacing: -1.5px; color: white; margin-bottom: 16px; }
+        .hero h1 strong { font-weight: 600; font-style: normal; }
+        .hero-sub { font-size: 15px; color: rgba(255,255,255,0.6); max-width: 500px; line-height: 1.7; }
 
-        /* ── HERO GALLERY (5-image grid) ── */
-        .hero-gallery {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 32px 20px;
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            grid-template-rows: 240px 240px;
-            gap: 6px;
-            border-radius: 16px;
-            overflow: hidden;
-        }
-        .hero-gallery img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            cursor: pointer;
-            transition: filter 0.2s;
-        }
-        .hero-gallery img:hover { filter: brightness(0.9); }
-        .hero-gallery img:first-child { grid-row: 1 / 3; }
+        /* QUICK FEATURES */
+        .quick-features { max-width: 1200px; margin: -36px auto 0; padding: 0 48px; position: relative; z-index: 3; }
+        .qf-inner { background: var(--surface); border-radius: 16px; padding: 28px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; box-shadow: 0 16px 48px rgba(0,0,0,0.08); }
+        .qf-item { text-align: center; }
+        .qf-val { font-family: 'Cormorant', serif; font-size: 24px; font-weight: 600; color: var(--ink); }
+        .qf-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--ink-muted); margin-top: 2px; }
 
-        /* ── FULL GALLERY GRID ── */
-        .gallery-section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px 32px 48px;
-        }
-        .gallery-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 16px;
-        }
-        .gallery-header h2 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 24px;
-            font-weight: 600;
-        }
-        .gallery-header .photo-count {
-            font-size: 13px;
-            color: var(--ink-muted);
-        }
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 6px;
-        }
-        .gallery-grid img {
-            width: 100%;
-            aspect-ratio: 3/2;
-            object-fit: cover;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: filter 0.2s, transform 0.2s;
-        }
-        .gallery-grid img:hover {
-            filter: brightness(0.9);
-            transform: scale(1.01);
-        }
+        /* GALLERY */
+        .gallery-section { max-width: 1200px; margin: 0 auto; padding: 64px 48px 32px; }
+        .gallery-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 16px; }
+        .gallery-header h2 { font-family: 'Cormorant', serif; font-size: 28px; font-weight: 500; }
+        .gallery-header .count { font-size: 12px; color: var(--ink-muted); }
+        .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+        .gallery-grid img { width: 100%; aspect-ratio: 3/2; object-fit: cover; border-radius: 8px; cursor: pointer; transition: filter 0.2s, transform 0.2s; }
+        .gallery-grid img:hover { filter: brightness(0.9); transform: scale(1.01); }
 
-        /* ── LIGHTBOX ── */
-        .lightbox {
-            display: none;
-            position: fixed;
-            inset: 0;
-            z-index: 1000;
-            background: rgba(0,0,0,0.95);
-            align-items: center;
-            justify-content: center;
-        }
+        /* LIGHTBOX */
+        .lightbox { display: none; position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,0.95); align-items: center; justify-content: center; }
         .lightbox.open { display: flex; }
-        .lightbox img {
-            max-width: 90vw;
-            max-height: 85vh;
-            object-fit: contain;
-            border-radius: 4px;
-            user-select: none;
-        }
-        .lb-close {
-            position: absolute;
-            top: 20px;
-            right: 28px;
-            background: none;
-            border: none;
-            color: rgba(255,255,255,0.7);
-            font-size: 32px;
-            cursor: pointer;
-            z-index: 1001;
-            padding: 8px;
-            line-height: 1;
-        }
-        .lb-close:hover { color: white; }
-        .lb-prev, .lb-next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255,255,255,0.12);
-            border: none;
-            color: white;
-            font-size: 28px;
-            width: 52px;
-            height: 52px;
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.2s;
-        }
-        .lb-prev:hover, .lb-next:hover { background: rgba(255,255,255,0.25); }
+        .lightbox img { max-width: 90vw; max-height: 85vh; object-fit: contain; border-radius: 4px; }
+        .lb-close { position: absolute; top: 20px; right: 28px; background: none; border: none; color: rgba(255,255,255,0.7); font-size: 32px; cursor: pointer; z-index: 1001; }
+        .lb-prev, .lb-next { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.12); border: none; color: white; font-size: 28px; width: 52px; height: 52px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; }
         .lb-prev { left: 20px; }
         .lb-next { right: 20px; }
-        .lb-counter {
-            position: absolute;
-            bottom: 24px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: rgba(255,255,255,0.5);
-            font-size: 14px;
-            font-weight: 500;
-        }
-        .lb-caption {
-            position: absolute;
-            bottom: 48px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: rgba(255,255,255,0.8);
-            font-size: 15px;
-            font-weight: 500;
-            white-space: nowrap;
-        }
+        .lb-counter { position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.5); font-size: 14px; }
+        .lb-caption { position: absolute; bottom: 48px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.8); font-size: 15px; font-weight: 500; white-space: nowrap; }
 
-        /* ── CONTENT LAYOUT ── */
-        .content-layout {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 32px 64px;
-            display: grid;
-            grid-template-columns: 1.8fr 1fr;
-            gap: 48px;
-        }
-        .content-main h2 { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; margin: 36px 0 16px; letter-spacing: -0.5px; }
+        /* CONTENT LAYOUT */
+        .content-layout { max-width: 1200px; margin: 0 auto; padding: 32px 48px 64px; display: grid; grid-template-columns: 1.8fr 1fr; gap: 48px; }
+        .content-main h2 { font-family: 'Cormorant', serif; font-size: 28px; font-weight: 500; margin: 36px 0 16px; }
         .content-main h2:first-child { margin-top: 0; }
-        .content-main p { font-size: 15px; color: var(--ink-soft); line-height: 1.75; margin-bottom: 14px; }
-        .amenities-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
-        .amenity-item { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--ink); font-weight: 500; padding: 12px 16px; background: var(--bg-warm); border-radius: 8px; }
+        .content-main p { font-size: 15px; color: var(--ink-soft); line-height: 1.8; margin-bottom: 14px; }
+        .amenities-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 16px 0; }
+        .amenity-item { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--ink); font-weight: 500; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; }
         .amenity-item span { font-size: 18px; }
-
-        /* SIDEBAR */
-        .sidebar-card { position: sticky; top: 100px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
-        .sidebar-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 600; margin-bottom: 8px; }
-        .sidebar-card .price-note { font-size: 13px; color: var(--ink-muted); margin-bottom: 24px; }
-        .sidebar-card .info-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
-        .sidebar-card .info-label { color: var(--ink-soft); }
-        .sidebar-card .info-value { font-weight: 600; color: var(--ink); }
-        .sidebar-card .cta-btn { display: block; width: 100%; padding: 16px; background: var(--ink); color: var(--bg); border: none; border-radius: 10px; font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 600; cursor: pointer; text-align: center; text-decoration: none; margin-top: 24px; transition: background 0.2s; }
-        .sidebar-card .cta-btn:hover { background: var(--sea); }
-        .sidebar-card .contact-alt { text-align: center; margin-top: 16px; font-size: 13px; color: var(--ink-muted); }
-        .sidebar-card .contact-alt a { color: var(--accent); text-decoration: none; font-weight: 600; }
-
-        /* BEDROOM GRID */
         .bedroom-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; margin: 16px 0; }
-        .bed-card { background: var(--bg-warm); border: 1px solid var(--border); border-radius: 10px; padding: 16px; text-align: center; }
+        .bed-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px; text-align: center; }
         .bed-icon { font-size: 24px; margin-bottom: 6px; }
         .bed-name { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
         .bed-desc { font-size: 12px; color: var(--ink-soft); line-height: 1.5; }
 
+        /* SIDEBAR */
+        .sidebar-card { position: sticky; top: 100px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+        .sidebar-card h3 { font-family: 'Cormorant', serif; font-size: 24px; font-weight: 500; margin-bottom: 8px; }
+        .sidebar-card .price-note { font-size: 13px; color: var(--ink-muted); margin-bottom: 24px; }
+        .sidebar-card .info-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+        .sidebar-card .info-label { color: var(--ink-soft); }
+        .sidebar-card .info-value { font-weight: 600; }
+        .sidebar-card .cta-btn { display: block; width: 100%; padding: 16px; background: var(--ink); color: var(--bg); border: none; border-radius: 100px; font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 600; cursor: pointer; text-align: center; text-decoration: none; margin-top: 24px; transition: background 0.2s; }
+        .sidebar-card .cta-btn:hover { background: var(--sea); }
+        .sidebar-card .contact-alt { text-align: center; margin-top: 16px; font-size: 13px; color: var(--ink-muted); }
+        .sidebar-card .contact-alt a { color: var(--accent); text-decoration: none; font-weight: 600; }
+
         /* EXPERIENCE SECTION */
-        .experience-section { background: var(--ink); padding: 64px 32px; }
-        .experience-inner { max-width: 1200px; margin: 0 auto; }
-        .experience-inner .section-head { text-align: center; margin-bottom: 40px; }
-        .experience-inner .section-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-light); margin-bottom: 12px; }
-        .experience-inner h2 { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 500; color: var(--bg); letter-spacing: -1px; }
+        .experience-section { background: var(--ink); padding: 100px 48px; }
+        .exp-inner { max-width: 1200px; margin: 0 auto; }
+        .exp-inner .section-head { text-align: center; margin-bottom: 48px; }
+        .exp-inner .section-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: var(--accent-light); margin-bottom: 12px; }
+        .exp-inner .section-title { font-family: 'Cormorant', serif; font-size: clamp(32px, 4vw, 48px); font-weight: 400; font-style: italic; color: white; }
+        .exp-inner .section-desc { color: rgba(255,255,255,0.45); font-size: 14px; margin-top: 12px; }
         .exp-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-        .exp-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 14px; padding: 28px 22px; text-align: center; transition: background 0.2s, transform 0.2s; }
-        .exp-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-2px); }
+        .exp-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 28px 22px; text-align: center; text-decoration: none; display: flex; flex-direction: column; transition: background 0.2s, transform 0.2s; }
+        .exp-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-3px); }
         .exp-emoji { font-size: 32px; margin-bottom: 14px; }
         .exp-card h3 { font-size: 15px; font-weight: 700; color: var(--bg); margin-bottom: 8px; }
-        .exp-card p { font-size: 13px; color: rgba(250,248,244,0.55); line-height: 1.6; }
-        .exp-link { text-decoration: none; display: flex; flex-direction: column; }
-        .exp-cta { margin-top: auto; padding-top: 14px; font-size: 12px; font-weight: 600; color: var(--accent-light); opacity: 0.7; transition: opacity 0.2s; }
+        .exp-card p { font-size: 13px; color: rgba(245,242,237,0.5); line-height: 1.6; }
+        .exp-cta { margin-top: auto; padding-top: 14px; font-size: 12px; font-weight: 600; color: var(--accent-light); opacity: 0.6; transition: opacity 0.2s; }
         .exp-card:hover .exp-cta { opacity: 1; }
 
-        /* MAP SECTION */
-        .map-section { max-width: 1200px; margin: 0 auto; padding: 64px 32px; }
-        .map-inner { max-width: 1200px; margin: 0 auto; }
-        .map-inner .section-head { text-align: center; margin-bottom: 32px; }
-        .map-inner .section-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
-        .map-inner h2 { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; color: var(--ink); letter-spacing: -0.5px; }
-        .map-wrap { border-radius: 12px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+        /* NIGHTLIFE */
+        .nightlife-section { background: var(--bg-deep); padding: 100px 48px; }
+        .nl-inner { max-width: 1200px; margin: 0 auto; }
+        .nl-inner .section-head { margin-bottom: 48px; }
+        .nl-inner .section-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+        .nl-inner .section-title { font-family: 'Cormorant', serif; font-size: clamp(28px, 3.5vw, 42px); font-weight: 400; }
+        .nl-inner .section-desc { font-size: 15px; color: var(--ink-soft); margin-top: 12px; max-width: 600px; line-height: 1.7; }
+        .nl-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+        .nl-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 28px; text-decoration: none; color: var(--ink); display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; }
+        .nl-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
+        .nl-card h4 { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+        .nl-card .nl-dist { font-size: 12px; font-weight: 600; color: var(--accent); margin-bottom: 10px; }
+        .nl-card p { font-size: 13px; color: var(--ink-soft); line-height: 1.6; }
+        .nl-card .nl-cta { margin-top: auto; padding-top: 14px; font-size: 12px; font-weight: 600; color: var(--accent); opacity: 0.5; transition: opacity 0.2s; }
+        .nl-card:hover .nl-cta { opacity: 1; }
 
-        /* NEARBY */
-        .nearby-section { background: var(--bg-warm); padding: 64px 32px; }
-        .nearby-inner { max-width: 1200px; margin: 0 auto; }
-        .nearby-inner h2 { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 500; margin-bottom: 32px; text-align: center; }
-        .nearby-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-        .nearby-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
-        .nearby-card h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
-        .nearby-card .dist { font-size: 12px; color: var(--accent); font-weight: 600; margin-bottom: 8px; }
-        .nearby-card p { font-size: 13px; color: var(--ink-soft); line-height: 1.6; }
-        .nearby-link { text-decoration: none; color: var(--ink); display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; }
-        .nearby-link:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
-        .nearby-cta { margin-top: auto; padding-top: 10px; font-size: 12px; font-weight: 600; color: var(--accent); opacity: 0.6; transition: opacity 0.2s; }
-        .nearby-link:hover .nearby-cta { opacity: 1; }
+        /* MAP */
+        .map-section { max-width: 1200px; margin: 0 auto; padding: 100px 48px; }
+        .map-section .section-head { text-align: center; margin-bottom: 32px; }
+        .map-section .section-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+        .map-section .section-title { font-family: 'Cormorant', serif; font-size: 28px; font-weight: 500; }
+        .map-wrap { border-radius: 16px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
 
         /* CTA */
-        .cta-section { max-width: 1200px; margin: 0 auto; padding: 64px 32px; text-align: center; }
-        .cta-card { background: var(--sea); border-radius: 20px; padding: 56px 40px; color: white; }
-        .cta-card h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 4vw, 42px); font-weight: 500; margin-bottom: 16px; }
-        .cta-card p { font-size: 16px; color: rgba(255,255,255,0.75); max-width: 500px; margin: 0 auto 28px; }
-        .cta-card .cta-btn { display: inline-block; padding: 14px 28px; background: white; color: var(--sea); border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 15px; }
+        .cta-section { max-width: 1200px; margin: 0 auto; padding: 0 48px 100px; }
+        .cta-card { position: relative; border-radius: 24px; overflow: hidden; padding: 80px; background: url('images/sani/9.jpg') center/cover; }
+        .cta-card::after { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.55); }
+        .cta-inner { position: relative; z-index: 2; max-width: 500px; }
+        .cta-inner h2 { font-family: 'Cormorant', serif; font-size: clamp(28px, 3.5vw, 44px); font-weight: 400; font-style: italic; color: white; margin-bottom: 16px; }
+        .cta-inner p { font-size: 15px; color: rgba(255,255,255,0.6); margin-bottom: 28px; line-height: 1.7; }
+        .btn-primary { padding: 16px 36px; background: white; color: var(--ink); border-radius: 100px; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: 0.5px; display: inline-block; transition: transform 0.3s; }
+        .btn-primary:hover { transform: translateY(-2px); }
 
         /* FOOTER */
-        footer { border-top: 1px solid var(--border); padding: 32px; text-align: center; font-size: 12px; color: var(--ink-muted); }
-        footer a { color: var(--ink-muted); text-decoration: none; margin: 0 12px; }
-        footer a:hover { color: var(--accent); }
+        footer { padding: 48px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        footer .f-brand { font-family: 'Cormorant', serif; font-size: 20px; font-weight: 600; }
+        footer .f-brand em { font-style: italic; color: var(--accent); }
+        footer .f-links { display: flex; gap: 28px; }
+        footer .f-links a { font-size: 13px; color: var(--ink-muted); text-decoration: none; }
+        footer .f-links a:hover { color: var(--ink); }
+        footer .f-copy { font-size: 11px; color: var(--ink-muted); }
+
+        /* SCROLL REVEAL */
+        .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
 
         @media (max-width: 900px) {
-            .hero-gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 200px 200px; }
-            .hero-gallery img:first-child { grid-row: auto; }
+            .nav { padding: 20px 24px; } .nav.scrolled { padding: 16px 24px; }
+            .nav-links { display: none; } .hamburger { display: flex; }
+            .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); padding: 24px; border-bottom: 1px solid var(--border); }
+            .nav-links.open a { color: var(--ink-soft) !important; }
+            .hero-content { padding: 0 24px 48px; }
+            .quick-features { padding: 0 24px; } .qf-inner { padding: 20px; gap: 12px; justify-content: center; }
+            .gallery-section, .content-layout, .map-section, .cta-section { padding-left: 24px; padding-right: 24px; }
             .gallery-grid { grid-template-columns: repeat(2, 1fr); }
             .content-layout { grid-template-columns: 1fr; }
             .sidebar-card { position: static; }
-            .nearby-grid { grid-template-columns: 1fr 1fr; }
+            .experience-section, .nightlife-section { padding: 64px 24px; }
             .exp-grid { grid-template-columns: 1fr 1fr; }
+            .nl-grid { grid-template-columns: 1fr 1fr; }
+            .cta-card { padding: 48px 28px; }
+            footer { padding: 32px 24px; flex-direction: column; text-align: center; }
         }
         @media (max-width: 600px) {
-            .nav-links { display: none; }
-            .hamburger { display: flex; }
-            .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); padding: 24px 32px; border-bottom: 1px solid var(--border); gap: 16px; }
-            .hero-gallery { grid-template-columns: 1fr; grid-template-rows: auto; }
-            .hero-gallery img { height: 220px; }
-            .gallery-grid { grid-template-columns: 1fr 1fr; }
-            .hero-features { gap: 10px; }
+            .qf-inner { flex-direction: column; } .exp-grid, .nl-grid { grid-template-columns: 1fr; }
             .amenities-grid { grid-template-columns: 1fr; }
-            .lb-prev, .lb-next { width: 40px; height: 40px; font-size: 20px; }
         }
     </style>
 </head>
 <body>
 
-<header class="nav-bar">
-    <div class="nav-inner">
-        <a href="/" class="nav-brand"><span class="theta">Theta <em>Villas</em></span></a>
-        <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
-        <nav class="nav-links">
-            <a href="/">Home</a>
-            <a href="/sani-villa.html" class="active">Sani Villa</a>
-            <a href="/larnaca-apartment.html">Larnaca</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html" class="nav-cta">Enquire Now</a>
-        </nav>
+<nav class="nav" id="nav">
+    <a href="/" class="nav-brand">Theta <em>Villas</em></a>
+    <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+        <a href="/sani-villa.html">Sani Villa</a>
+        <a href="/larnaca-apartment.html">Larnaca</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html" class="nav-cta">Enquire</a>
     </div>
-</header>
+</nav>
 
-<section class="page-hero">
-    <div class="breadcrumb"><a href="/">Home</a> → Sani Villa</div>
-    <h1>Luxury villa in <em>Sani Resort</em>, Halkidiki</h1>
-    <p class="page-subtitle">A stunning 5-bedroom beachfront villa with private pool inside the exclusive Sani Resort on the Kassandra Peninsula, Halkidiki, Greece. Panoramic views of the Thermaic Gulf, landscaped gardens, and full resort access.</p>
-    <div class="hero-features">
-        <div class="hero-feat">🛏️ 5 Bedrooms</div>
-        <div class="hero-feat">🚿 4 Bathrooms</div>
-        <div class="hero-feat">🏊 Private Pool</div>
-        <div class="hero-feat">🏖️ Beachfront</div>
-        <div class="hero-feat">🅿️ 2 Parking</div>
-        <div class="hero-feat">👥 Up to 10 Guests</div>
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+        <div class="hero-eyebrow">Sani Resort · Halkidiki · Greece</div>
+        <h1><strong>The Sani Villa</strong></h1>
+        <p class="hero-sub">A 5-bedroom beachfront villa with private pool inside the exclusive Sani Resort on the Kassandra Peninsula. Panoramic views of the Thermaic Gulf.</p>
     </div>
 </section>
 
-<!-- ══ HERO GALLERY (5-image teaser) ══ -->
-<div class="hero-gallery">
-    <img src="images/sani/11.jpg" alt="Covered patio with pool and sea view at Sani villa" onclick="openLightbox(0)" loading="eager">
-    <img src="images/sani/9.jpg" alt="Aerial drone view of Sani villa with private pool" onclick="openLightbox(1)" loading="eager">
-    <img src="images/sani/3.jpg" alt="Private pool at sunset with sea reflection" onclick="openLightbox(2)" loading="eager">
-    <img src="images/sani/13.jpg" alt="Master bedroom with en-suite bathroom" onclick="openLightbox(3)" loading="lazy">
-    <img src="images/sani/8.jpg" alt="Poolside sun loungers and garden" onclick="openLightbox(4)" loading="lazy">
+<!-- QUICK FEATURES -->
+<div class="quick-features">
+    <div class="qf-inner">
+        <div class="qf-item"><div class="qf-val">5</div><div class="qf-label">Bedrooms</div></div>
+        <div class="qf-item"><div class="qf-val">4</div><div class="qf-label">Bathrooms</div></div>
+        <div class="qf-item"><div class="qf-val">10</div><div class="qf-label">Guests</div></div>
+        <div class="qf-item"><div class="qf-val">Private</div><div class="qf-label">Pool</div></div>
+        <div class="qf-item"><div class="qf-val">2 min</div><div class="qf-label">To Beach</div></div>
+        <div class="qf-item"><div class="qf-val">1 hr</div><div class="qf-label">From Airport</div></div>
+    </div>
 </div>
 
-<!-- ══ FULL GALLERY ══ -->
-<section class="gallery-section">
-    <div class="gallery-header">
-        <h2>All Photos</h2>
-        <span class="photo-count">13 photos</span>
-    </div>
+<!-- PHOTO GALLERY -->
+<section class="gallery-section reveal">
+    <div class="gallery-header"><h2>Photos</h2><span class="count">13 photos</span></div>
     <div class="gallery-grid">
-        <img src="images/sani/11.jpg" alt="Covered patio lounge with pool and sea view" onclick="openLightbox(0)" loading="lazy">
-        <img src="images/sani/9.jpg" alt="Aerial view of villa and pool" onclick="openLightbox(1)" loading="lazy">
-        <img src="images/sani/3.jpg" alt="Pool reflecting sunset clouds" onclick="openLightbox(2)" loading="lazy">
-        <img src="images/sani/2.jpg" alt="Pool at golden hour with flowers" onclick="openLightbox(3)" loading="lazy">
-        <img src="images/sani/1.jpg" alt="Sunset over the Thermaic Gulf from the villa" onclick="openLightbox(4)" loading="lazy">
-        <img src="images/sani/8.jpg" alt="Sun loungers by the pool with garden shade" onclick="openLightbox(5)" loading="lazy">
-        <img src="images/sani/7.jpg" alt="Garden deck with chairs under the trees" onclick="openLightbox(5)" loading="lazy">
-        <img src="images/sani/13.jpg" alt="Master bedroom with en-suite and wall art" onclick="openLightbox(5)" loading="lazy">
-        <img src="images/sani/5.jpg" alt="Master suite with balcony views and baby cot" onclick="openLightbox(5)" loading="lazy">
-        <img src="images/sani/10.jpg" alt="First floor double bedroom" onclick="openLightbox(5)" loading="lazy">
-        <img src="images/sani/6.jpg" alt="Double bedroom with ship painting" onclick="openLightbox(5)" loading="lazy">
-        <img src="images/sani/12.jpg" alt="Ground floor twin bedroom with sofa bed" onclick="openLightbox(5)" loading="lazy">
-        <img src="images/sani/4.jpg" alt="Twin bedroom with wooden shutters" onclick="openLightbox(5)" loading="lazy">
+        <img src="images/sani/11.jpg" alt="Front patio and lounge" onclick="openLightbox(0)" loading="lazy">
+        <img src="images/sani/9.jpg" alt="Aerial drone view" onclick="openLightbox(1)" loading="lazy">
+        <img src="images/sani/3.jpg" alt="Pool at sunset" onclick="openLightbox(2)" loading="lazy">
+        <img src="images/sani/2.jpg" alt="Pool with flowers" onclick="openLightbox(3)" loading="lazy">
+        <img src="images/sani/1.jpg" alt="Wide sunset view" onclick="openLightbox(4)" loading="lazy">
+        <img src="images/sani/8.jpg" alt="Poolside loungers" onclick="openLightbox(5)" loading="lazy">
+        <img src="images/sani/7.jpg" alt="Garden deck" onclick="openLightbox(6)" loading="lazy">
+        <img src="images/sani/13.jpg" alt="Master bedroom" onclick="openLightbox(7)" loading="lazy">
+        <img src="images/sani/5.jpg" alt="Master suite" onclick="openLightbox(8)" loading="lazy">
+        <img src="images/sani/10.jpg" alt="Bedroom 2" onclick="openLightbox(9)" loading="lazy">
+        <img src="images/sani/6.jpg" alt="Bedroom 3" onclick="openLightbox(10)" loading="lazy">
+        <img src="images/sani/12.jpg" alt="Twin bedroom" onclick="openLightbox(11)" loading="lazy">
+        <img src="images/sani/4.jpg" alt="Twin bedroom 2" onclick="openLightbox(12)" loading="lazy">
     </div>
 </section>
 
-<!-- ══ LIGHTBOX ══ -->
+<!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox">
     <button class="lb-close" onclick="closeLightbox()">&times;</button>
     <button class="lb-prev" onclick="prevPhoto()">‹</button>
@@ -360,8 +247,9 @@
     <div class="lb-counter" id="lb-counter"></div>
 </div>
 
+<!-- CONTENT -->
 <div class="content-layout">
-    <div class="content-main">
+    <div class="content-main reveal">
         <h2>About the Villa</h2>
         <p>A spacious 5-bedroom villa inside the gated Sani Resort on the Kassandra Peninsula. Private pool, landscaped gardens, and panoramic sea views — with full access to the resort's world-class beaches, restaurants, and facilities.</p>
 
@@ -385,31 +273,11 @@
 
         <h2>Bedrooms</h2>
         <div class="bedroom-grid">
-            <div class="bed-card">
-                <div class="bed-icon">👑</div>
-                <div class="bed-name">Master Suite</div>
-                <div class="bed-desc">King bed · En-suite · Balcony with sea view</div>
-            </div>
-            <div class="bed-card">
-                <div class="bed-icon">🛏️</div>
-                <div class="bed-name">Bedroom 2</div>
-                <div class="bed-desc">Double bed · Wardrobe · Air conditioning</div>
-            </div>
-            <div class="bed-card">
-                <div class="bed-icon">🛏️</div>
-                <div class="bed-name">Bedroom 3</div>
-                <div class="bed-desc">Double bed · Wardrobe · Air conditioning</div>
-            </div>
-            <div class="bed-card">
-                <div class="bed-icon">🛏️</div>
-                <div class="bed-name">Bedroom 4</div>
-                <div class="bed-desc">Twin beds · Sofa bed · Air conditioning</div>
-            </div>
-            <div class="bed-card">
-                <div class="bed-icon">🛏️</div>
-                <div class="bed-name">Bedroom 5</div>
-                <div class="bed-desc">Twin beds · Wardrobe · Fan</div>
-            </div>
+            <div class="bed-card"><div class="bed-icon">👑</div><div class="bed-name">Master Suite</div><div class="bed-desc">King bed · En-suite · Balcony with sea view</div></div>
+            <div class="bed-card"><div class="bed-icon">🛏️</div><div class="bed-name">Bedroom 2</div><div class="bed-desc">Double bed · Wardrobe · Air conditioning</div></div>
+            <div class="bed-card"><div class="bed-icon">🛏️</div><div class="bed-name">Bedroom 3</div><div class="bed-desc">Double bed · Wardrobe · Air conditioning</div></div>
+            <div class="bed-card"><div class="bed-icon">🛏️</div><div class="bed-name">Bedroom 4</div><div class="bed-desc">Twin beds · Sofa bed · Air conditioning</div></div>
+            <div class="bed-card"><div class="bed-icon">🛏️</div><div class="bed-name">Bedroom 5</div><div class="bed-desc">Twin beds · Wardrobe · Fan</div></div>
         </div>
     </div>
 
@@ -431,200 +299,107 @@
     </div>
 </div>
 
-<!-- ══ EXPERIENCE SECTION ══ -->
+<!-- EXPERIENCE -->
 <section class="experience-section">
-    <div class="experience-inner">
+    <div class="exp-inner">
         <div class="section-head">
             <div class="section-eyebrow">The Sani Experience</div>
-            <h2>What you can do here</h2>
-            <p style="color: rgba(250,248,244,0.45); font-size: 14px; margin-top: 12px;">As a villa guest you have full access to the resort's world-class facilities. Click any card to explore and book.</p>
+            <h2 class="section-title">What you can do here</h2>
+            <p class="section-desc">As a villa guest you have full access to the resort's world-class facilities. Click any card to explore and book.</p>
         </div>
         <div class="exp-grid">
-            <a href="https://sani-resort.com/experiences/academies" target="_blank" rel="noopener" class="exp-card exp-link">
-                <div class="exp-emoji">🎾</div>
-                <h3>Academies</h3>
-                <p>Rafa Nadal Tennis Centre, Chelsea FC Football Academy, Bear Grylls Survival Academy, scuba diving, sailing, and water ski academies.</p>
-                <span class="exp-cta">Explore & Book →</span>
-            </a>
-            <a href="https://sani-resort.com/gastronomy/restaurants-bars" target="_blank" rel="noopener" class="exp-card exp-link">
-                <div class="exp-emoji">🍷</div>
-                <h3>Restaurants & Bars</h3>
-                <p>Over 20 restaurants at Sani Marina — Greek mezze, fresh seafood, Italian, sushi, and beachfront cocktail bars.</p>
-                <span class="exp-cta">View Restaurants →</span>
-            </a>
-            <a href="https://sani-resort.com/experiences/activities-on-the-water" target="_blank" rel="noopener" class="exp-card exp-link">
-                <div class="exp-emoji">⛵</div>
-                <h3>Watersports</h3>
-                <p>Kayaking, paddle boarding, jet skis, sailing, snorkelling, water skiing, and yacht charters — all from the resort's beach.</p>
-                <span class="exp-cta">Explore & Book →</span>
-            </a>
-            <a href="https://sani-resort.com/experiences/wellness-spa-resort" target="_blank" rel="noopener" class="exp-card exp-link">
-                <div class="exp-emoji">🧖</div>
-                <h3>Spa & Wellness</h3>
-                <p>Full-service spa with massages, facials, holistic treatments, and a fitness centre with sea views.</p>
-                <span class="exp-cta">Explore & Book →</span>
-            </a>
-            <a href="https://sani-resort.com/families" target="_blank" rel="noopener" class="exp-card exp-link">
-                <div class="exp-emoji">👧</div>
-                <h3>Kids & Families</h3>
-                <p>Supervised kids' clubs (ages 4-12), teen activities, creative workshops, and children's menus by Donna Hay.</p>
-                <span class="exp-cta">Explore & Book →</span>
-            </a>
-            <a href="https://sani-resort.com/experiences/entertainment" target="_blank" rel="noopener" class="exp-card exp-link">
-                <div class="exp-emoji">🎵</div>
-                <h3>Entertainment</h3>
-                <p>Live music, open-air cinema, Greek nights, live DJs, and the annual Sani Festival every summer at the Marina.</p>
-                <span class="exp-cta">What's On →</span>
-            </a>
-            <a href="https://sani-resort.com/beaches-pools" target="_blank" rel="noopener" class="exp-card exp-link">
-                <div class="exp-emoji">🏖️</div>
-                <h3>Beaches & Pools</h3>
-                <p>Blue Flag beaches with crystal-clear shallow waters, resort pools, and the Sani Dunes beach club with loungers and cocktails.</p>
-                <span class="exp-cta">Explore →</span>
-            </a>
-            <a href="https://sani-resort.com/experiences/local" target="_blank" rel="noopener" class="exp-card exp-link">
-                <div class="exp-emoji">🏛️</div>
-                <h3>Local Excursions</h3>
-                <p>Ancient Olynthos, Aristotle's birthplace at Stagira, Thessaloniki, Petralona Cave, Mount Athos boat trips, and Sithonia's hidden coves.</p>
-                <span class="exp-cta">Explore & Book →</span>
-            </a>
+            <a href="https://sani-resort.com/experiences/academies" target="_blank" rel="noopener" class="exp-card"><div class="exp-emoji">🎾</div><h3>Academies</h3><p>Rafa Nadal Tennis Centre, Chelsea FC Academy, Bear Grylls Survival Academy, scuba diving, sailing, and water ski.</p><span class="exp-cta">Explore & Book →</span></a>
+            <a href="https://sani-resort.com/gastronomy/restaurants-bars" target="_blank" rel="noopener" class="exp-card"><div class="exp-emoji">🍷</div><h3>Restaurants & Bars</h3><p>Over 20 restaurants at Sani Marina — Greek mezze, fresh seafood, Italian, sushi, and beachfront cocktails.</p><span class="exp-cta">View Restaurants →</span></a>
+            <a href="https://sani-resort.com/experiences/activities-on-the-water" target="_blank" rel="noopener" class="exp-card"><div class="exp-emoji">⛵</div><h3>Watersports</h3><p>Kayaking, paddle boarding, jet skis, sailing, snorkelling, water skiing, and yacht charters.</p><span class="exp-cta">Explore & Book →</span></a>
+            <a href="https://sani-resort.com/experiences/wellness-spa-resort" target="_blank" rel="noopener" class="exp-card"><div class="exp-emoji">🧖</div><h3>Spa & Wellness</h3><p>Full-service spa with massages, facials, holistic treatments, and a fitness centre with sea views.</p><span class="exp-cta">Explore & Book →</span></a>
+            <a href="https://sani-resort.com/families" target="_blank" rel="noopener" class="exp-card"><div class="exp-emoji">👧</div><h3>Kids & Families</h3><p>Supervised kids' clubs (ages 4-12), teen activities, creative workshops, and children's menus.</p><span class="exp-cta">Explore & Book →</span></a>
+            <a href="https://sani-resort.com/experiences/entertainment" target="_blank" rel="noopener" class="exp-card"><div class="exp-emoji">🎵</div><h3>Entertainment</h3><p>Live music, open-air cinema, Greek nights, live DJs, and the annual Sani Festival.</p><span class="exp-cta">What's On →</span></a>
+            <a href="https://sani-resort.com/beaches-pools" target="_blank" rel="noopener" class="exp-card"><div class="exp-emoji">🏖️</div><h3>Beaches & Pools</h3><p>Blue Flag beaches with crystal-clear waters, resort pools, and the Sani Dunes beach club.</p><span class="exp-cta">Explore →</span></a>
+            <a href="https://sani-resort.com/experiences/local" target="_blank" rel="noopener" class="exp-card"><div class="exp-emoji">🏛️</div><h3>Local Excursions</h3><p>Ancient Olynthos, Aristotle's Stagira, Thessaloniki, Petralona Cave, Mount Athos boat trips.</p><span class="exp-cta">Explore & Book →</span></a>
         </div>
     </div>
 </section>
 
-<!-- ══ LOCATION MAP ══ -->
-<section class="map-section">
-    <div class="map-inner">
-        <div class="section-head">
-            <div class="section-eyebrow">Location</div>
-            <h2>Club Villa D4, Sani 630 77, Greece</h2>
+<!-- NIGHTLIFE -->
+<section class="nightlife-section">
+    <div class="nl-inner">
+        <div class="section-head reveal">
+            <div class="section-eyebrow">After Hours</div>
+            <h2 class="section-title">Nightlife & Beach Bars</h2>
+            <p class="section-desc">The Kassandra Peninsula has some of the best nightlife in Greece. These clubs and beach bars are all a short drive from the villa.</p>
         </div>
-        <div class="map-wrap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.5!2d23.312038!3d40.0924498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a7d5002ecebee3%3A0x8675e3aaca2c8b88!2sLuxury%20Villa%20in%20Sani%20Theta%20Real%20Estate%20S.A.!5e0!3m2!1sen!2sgr!4v1700000000000!5m2!1sen!2sgr" width="100%" height="450" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
-</section>
-
-<section class="nearby-section">
-    <div class="nearby-inner">
-        <h2>Nightlife & Beach Bars</h2>
-        <p style="color: var(--ink-soft); font-size: 15px; margin-bottom: 24px;">The Kassandra Peninsula has some of the best nightlife in Greece. These clubs and beach bars are all a short drive from the villa — perfect for a night out or a sunset session.</p>
-        <div class="nearby-grid">
-            <a href="https://www.ahoy.gr/" target="_blank" rel="noopener" class="nearby-card nearby-link">
-                <h4>Ahoy Club</h4>
-                <div class="dist">Kallithea · 15 min drive</div>
-                <p>Legendary Halkidiki nightclub in the heart of Kallithea. International DJs, themed parties, and electric summer nights.</p>
-                <span class="nearby-cta">Visit Website →</span>
-            </a>
-            <a href="https://www.instagram.com/pearlclubhalkidiki/" target="_blank" rel="noopener" class="nearby-card nearby-link">
-                <h4>Pearl Club</h4>
-                <div class="dist">Kallithea · 15 min drive</div>
-                <p>Stylish open-air club with top DJs and bottle service. One of Kassandra's most popular late-night spots.</p>
-                <span class="nearby-cta">View on Instagram →</span>
-            </a>
-            <a href="https://www.instagram.com/angelsclubchalkidiki/" target="_blank" rel="noopener" class="nearby-card nearby-link">
-                <h4>Angels Club</h4>
-                <div class="dist">Kallithea · 15 min drive</div>
-                <p>High-energy nightclub with live performances, resident DJs, and a vibrant crowd every summer weekend.</p>
-                <span class="nearby-cta">View on Instagram →</span>
-            </a>
-            <a href="https://edenofshaka.com/" target="_blank" rel="noopener" class="nearby-card nearby-link">
-                <h4>Eden of Shaka</h4>
-                <div class="dist">Kallithea · 20 min drive</div>
-                <p>The most impressive open-air nightclub in Northern Greece. International headliners, immersive production, and unforgettable nights under the stars.</p>
-                <span class="nearby-cta">Visit Website →</span>
-            </a>
-            <a href="https://www.instagram.com/spitaki_cocktail_bar/" target="_blank" rel="noopener" class="nearby-card nearby-link">
-                <h4>Spitaki Cocktail Bar</h4>
-                <div class="dist">Kallithea · 15 min drive</div>
-                <p>Cosy cocktail bar in Kallithea village. Handcrafted drinks, relaxed atmosphere, and a great spot for sundowners before heading out.</p>
-                <span class="nearby-cta">View on Instagram →</span>
-            </a>
-            <a href="https://www.cabanabeach.gr/" target="_blank" rel="noopener" class="nearby-card nearby-link">
-                <h4>Cabana Beach Bar</h4>
-                <div class="dist">Paliouri · 40 min drive</div>
-                <p>Premium beach club on one of Halkidiki's most beautiful beaches. Sushi, cocktails, watersports, massage, and sunset DJ sets. Worth the drive.</p>
-                <span class="nearby-cta">Visit Website →</span>
-            </a>
+        <div class="nl-grid">
+            <a href="https://www.ahoy.gr/" target="_blank" rel="noopener" class="nl-card"><h4>Ahoy Club</h4><div class="nl-dist">Kallithea · 15 min</div><p>Legendary Halkidiki nightclub. International DJs, themed parties, and electric summer nights.</p><span class="nl-cta">Visit Website →</span></a>
+            <a href="https://www.instagram.com/pearlclubhalkidiki/" target="_blank" rel="noopener" class="nl-card"><h4>Pearl Club</h4><div class="nl-dist">Kallithea · 15 min</div><p>Stylish open-air club with top DJs and bottle service. One of Kassandra's most popular spots.</p><span class="nl-cta">View on Instagram →</span></a>
+            <a href="https://www.instagram.com/angelsclubchalkidiki/" target="_blank" rel="noopener" class="nl-card"><h4>Angels Club</h4><div class="nl-dist">Kallithea · 15 min</div><p>High-energy nightclub with live performances, resident DJs, and a vibrant crowd.</p><span class="nl-cta">View on Instagram →</span></a>
+            <a href="https://edenofshaka.com/" target="_blank" rel="noopener" class="nl-card"><h4>Eden of Shaka</h4><div class="nl-dist">Kallithea · 20 min</div><p>The most impressive open-air nightclub in Northern Greece. International headliners under the stars.</p><span class="nl-cta">Visit Website →</span></a>
+            <a href="https://www.instagram.com/spitaki_cocktail_bar/" target="_blank" rel="noopener" class="nl-card"><h4>Spitaki Cocktail Bar</h4><div class="nl-dist">Kallithea · 15 min</div><p>Cosy cocktail bar in Kallithea village. Handcrafted drinks and a great spot for sundowners.</p><span class="nl-cta">View on Instagram →</span></a>
+            <a href="https://www.cabanabeach.gr/" target="_blank" rel="noopener" class="nl-card"><h4>Cabana Beach Bar</h4><div class="nl-dist">Paliouri · 40 min</div><p>Premium beach club. Sushi, cocktails, watersports, massage, and sunset DJ sets. Worth the drive.</p><span class="nl-cta">Visit Website →</span></a>
         </div>
     </div>
 </section>
 
-<section class="cta-section">
+<!-- MAP -->
+<section class="map-section reveal">
+    <div class="section-head">
+        <div class="section-eyebrow">Location</div>
+        <h2 class="section-title">Club Villa D4, Sani 630 77, Greece</h2>
+    </div>
+    <div class="map-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.5!2d23.312038!3d40.0924498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a7d5002ecebee3%3A0x8675e3aaca2c8b88!2sLuxury%20Villa%20in%20Sani%20Theta%20Real%20Estate%20S.A.!5e0!3m2!1sen!2sgr!4v1700000000000!5m2!1sen!2sgr" width="100%" height="450" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section reveal">
     <div class="cta-card">
-        <h2>Ready to book the Sani Villa?</h2>
-        <p>Send us an enquiry and we'll get back to you within 24 hours with availability and rates.</p>
-        <a href="/contact.html" class="cta-btn">Enquire Now</a>
+        <div class="cta-inner">
+            <h2>Ready to book the Sani Villa?</h2>
+            <p>Send us an enquiry and we'll get back to you within 24 hours with availability and rates.</p>
+            <a href="/contact.html" class="btn-primary">Enquire Now</a>
+        </div>
     </div>
 </section>
 
 <footer>
-    <div style="margin-bottom: 16px;">
-        <a href="/">Home</a><a href="/sani-villa.html">Sani Villa</a><a href="/larnaca-apartment.html">Larnaca</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a>
-    </div>
-    &copy; 2026 Theta Villas. All rights reserved.
+    <div class="f-brand">Theta <em>Villas</em></div>
+    <div class="f-links"><a href="/">Home</a><a href="/sani-villa.html">Sani Villa</a><a href="/larnaca-apartment.html">Larnaca</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a></div>
+    <div class="f-copy">&copy; 2026 Theta Villas. All rights reserved.</div>
 </footer>
 
 <script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 80));
+
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => observer.observe(el));
+
 const photos = [
-    { src: 'images/sani/11.jpg', caption: 'Covered patio with pool and sea view' },
-    { src: 'images/sani/9.jpg', caption: 'Aerial view of the villa and private pool' },
-    { src: 'images/sani/3.jpg', caption: 'Pool reflecting the sunset' },
-    { src: 'images/sani/2.jpg', caption: 'Pool at golden hour' },
-    { src: 'images/sani/1.jpg', caption: 'Sunset over the Thermaic Gulf' },
+    { src: 'images/sani/11.jpg', caption: 'Front patio and lounge' },
+    { src: 'images/sani/9.jpg', caption: 'Aerial view of the villa' },
+    { src: 'images/sani/3.jpg', caption: 'Pool at sunset' },
+    { src: 'images/sani/2.jpg', caption: 'Pool with flowers' },
+    { src: 'images/sani/1.jpg', caption: 'Wide sunset view' },
     { src: 'images/sani/8.jpg', caption: 'Poolside sun loungers' },
-    { src: 'images/sani/7.jpg', caption: 'Shaded garden deck' },
-    { src: 'images/sani/13.jpg', caption: 'Master bedroom with en-suite' },
-    { src: 'images/sani/5.jpg', caption: 'Master suite with sea views' },
-    { src: 'images/sani/10.jpg', caption: 'First floor double bedroom' },
-    { src: 'images/sani/6.jpg', caption: 'Double bedroom' },
-    { src: 'images/sani/12.jpg', caption: 'Twin bedroom with sofa bed' },
-    { src: 'images/sani/4.jpg', caption: 'Twin bedroom' }
+    { src: 'images/sani/7.jpg', caption: 'Garden and deck area' },
+    { src: 'images/sani/13.jpg', caption: 'Master bedroom' },
+    { src: 'images/sani/5.jpg', caption: 'Master suite' },
+    { src: 'images/sani/10.jpg', caption: 'Bedroom 2' },
+    { src: 'images/sani/6.jpg', caption: 'Bedroom 3' },
+    { src: 'images/sani/12.jpg', caption: 'Twin bedroom' },
+    { src: 'images/sani/4.jpg', caption: 'Twin bedroom 2' }
 ];
-
 let currentIndex = 0;
-
-function openLightbox(i) {
-    currentIndex = i;
-    showPhoto();
-    document.getElementById('lightbox').classList.add('open');
-    document.body.style.overflow = 'hidden';
-}
-
-function closeLightbox() {
-    document.getElementById('lightbox').classList.remove('open');
-    document.body.style.overflow = '';
-}
-
-function showPhoto() {
-    document.getElementById('lb-img').src = photos[currentIndex].src;
-    document.getElementById('lb-img').alt = photos[currentIndex].caption;
-    document.getElementById('lb-caption').textContent = photos[currentIndex].caption;
-    document.getElementById('lb-counter').textContent = (currentIndex + 1) + ' / ' + photos.length;
-}
-
-function nextPhoto() {
-    currentIndex = (currentIndex + 1) % photos.length;
-    showPhoto();
-}
-
-function prevPhoto() {
-    currentIndex = (currentIndex - 1 + photos.length) % photos.length;
-    showPhoto();
-}
-
-// Keyboard navigation
-document.addEventListener('keydown', e => {
-    if (!document.getElementById('lightbox').classList.contains('open')) return;
-    if (e.key === 'ArrowRight') nextPhoto();
-    if (e.key === 'ArrowLeft') prevPhoto();
-    if (e.key === 'Escape') closeLightbox();
-});
-
-// Close on background click
-document.getElementById('lightbox').addEventListener('click', e => {
-    if (e.target === document.getElementById('lightbox')) closeLightbox();
-});
+function openLightbox(i) { currentIndex = i; showPhoto(); document.getElementById('lightbox').classList.add('open'); document.body.style.overflow = 'hidden'; }
+function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow = ''; }
+function showPhoto() { document.getElementById('lb-img').src = photos[currentIndex].src; document.getElementById('lb-caption').textContent = photos[currentIndex].caption; document.getElementById('lb-counter').textContent = (currentIndex+1)+' / '+photos.length; }
+function nextPhoto() { currentIndex = (currentIndex+1) % photos.length; showPhoto(); }
+function prevPhoto() { currentIndex = (currentIndex-1+photos.length) % photos.length; showPhoto(); }
+document.addEventListener('keydown', e => { if (!document.getElementById('lightbox').classList.contains('open')) return; if (e.key==='ArrowRight') nextPhoto(); if (e.key==='ArrowLeft') prevPhoto(); if (e.key==='Escape') closeLightbox(); });
+document.getElementById('lightbox').addEventListener('click', e => { if (e.target === document.getElementById('lightbox')) closeLightbox(); });
 </script>
 
 </body>
