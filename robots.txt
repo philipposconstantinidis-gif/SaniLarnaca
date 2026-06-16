@@ -1,0 +1,5 @@
+# Allow all crawlers — search engines and AI assistants
+User-agent: *
+Allow: /
+
+Sitemap: https://thetavillas.com/sitemap.xml
